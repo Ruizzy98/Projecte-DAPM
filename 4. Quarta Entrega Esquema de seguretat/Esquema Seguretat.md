@@ -128,6 +128,9 @@ GRANT SELECT, UPDATE ON HABITACIO, PERSONAL_VARI TO manteniment;
 Data Masking
 ------------
 Instalem pgxclient 
+
+<br>
+
 ![Imatge1](Imatges/DataMasking.jpg)
 
 <br>
