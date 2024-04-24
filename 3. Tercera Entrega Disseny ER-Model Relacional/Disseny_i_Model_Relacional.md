@@ -68,9 +68,8 @@ CREATE TABLE QUIROFAN(
     id_reserva INT,
     num_planta INT,
     CONSTRAINT quirofans_planta_fk FOREIGN KEY (num_planta) REFERENCES PLANTA(num_planta),
-    CONSTRAINT quirofans_reserva_fk FOREIGN KEY (num_reserva) REFERENCES RESERVA(num_reserva)
+    CONSTRAINT quirofans_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva)
 );
-
 ```
 TAULA OPERACIO
 --------------
