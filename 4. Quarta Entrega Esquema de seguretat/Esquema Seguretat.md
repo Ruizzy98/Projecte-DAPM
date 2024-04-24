@@ -127,22 +127,27 @@ GRANT SELECT, UPDATE ON HABITACIO, PERSONAL_VARI TO manteniment;
 
 Data Masking
 ------------
+Instalem pgxclient 
 ![Imatge1](Imatges/DataMasking.jpg)
 
 <br>
 
+Aqui instalem l'anonymizer
 ![Imatge2](Imatges/DataMasking1.jpg)
 
 <br>
 
+Creem la extensió ANNON i li posem les seves llibreries
 ![Imatge3](Imatges/DataMasking2.jpg)
 
 <br>
 
+Reiniciem el servei 
 ![Imatge4](Imatges/DataMasking3.jpg)
 
 <br>
 
+Xifrem la columna DNI
 ![Imatge5](Imatges/DataMasking4.jpg)
 
 <br>
