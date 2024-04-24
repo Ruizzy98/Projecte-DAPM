@@ -29,8 +29,7 @@ TAULA PLANTA
 ------------
 ```
 CREATE TABLE PLANTA(
-    id_planta SERIAL PRIMARY KEY, 
-    num_plantes INTEGER NOT NULL
+    num_planta SERIAL PRIMARY KEY
 );
 
 ```
@@ -65,12 +64,12 @@ TAULA QUIROFAN
 ------------
 ```
 CREATE TABLE QUIROFAN(
-    id_quirofan SERIAL PRIMARY KEY, 
+    nom_quirofan SERIAL PRIMARY KEY, 
     id_reserva INT,
-    id_planta INT,
+    num_planta INT,
     CONSTRAINT quirofans_planta_fk FOREIGN KEY (id_planta) REFERENCES PLANTA(id_planta),
-    CONSTRAINT quirofans_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva)
-);
+    CONSTRAINT quirofans_reserva_fk FOREIGN KEY (num_reserva) REFERENCES RESERVA(num_reserva)
+;
 
 ```
 TAULA OPERACIO
@@ -79,9 +78,10 @@ TAULA OPERACIO
 CREATE TABLE OPERACIO (
     id_operacio SERIAL PRIMARY KEY,
     id_reserva INT,
-    id_quirofan INT,
+    nom_quirofan INT,
     CONSTRAINT id_reserva_operacio_operacio_fk  FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva),
-    CONSTRAINT id_reserva_quirofan_operacio_fk  FOREIGN KEY (id_quirofan) REFERENCES QUIROFAN(id_quirofan) 
+    CONSTRAINT id_reserva_quirofan_operacio_fk  FOREIGN KEY (nom_quirofan) REFERENCES             
+    QUIROFAN(nom_quirofan) 
 );
 ```
 TAULA PACIENT
@@ -137,11 +137,10 @@ TAULA HABITACIO
 -------------------
 ```
 CREATE TABLE HABITACIO(
-    id_habitacio SERIAL PRIMARY KEY, 
-    num_habitacio INTEGER NOT NULL,
-    id_planta INT, 
+    num_habitacio SERIAL PRIMARY KEY, 
+    num_planta INT, 
     id_reserva INT,
-    CONSTRAINT planta_habitacio_fk FOREIGN KEY (id_planta) REFERENCES PLANTA (id_planta),
+    CONSTRAINT planta_habitacio_fk FOREIGN KEY (num_planta) REFERENCES PLANTA (num_planta),
     CONSTRAINT habitacio_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva)
 );
 ```
@@ -163,8 +162,8 @@ CREATE TABLE APARELL_MEDIC(
     id_aparell_medic SERIAL PRIMARY KEY,  
     tipus_de_aparell VARCHAR(25) NOT NULL,
     quantitat INT,
-    id_quirofan INT,
-    CONSTRAINT aparell_medic_quirofan_fk FOREIGN KEY (id_quirofan) REFERENCES QUIROFAN(id_quirofan)
+    nom_quirofan INT,
+    CONSTRAINT aparell_medic_quirofan_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan)
 );
 
 ```
