@@ -136,21 +136,33 @@ Instalem pgxclient
 <br>
 
 Aqui instalem l'anonymizer
+
+<br>
+
 ![Imatge2](Imatges/DataMasking1.jpg)
 
 <br>
 
 Creem la extensió ANNON i li posem les seves llibreries
+
+<br>
+
 ![Imatge3](Imatges/DataMasking2.jpg)
 
 <br>
 
 Reiniciem el servei 
+
+<br>
+
 ![Imatge4](Imatges/DataMasking3.jpg)
 
 <br>
 
 Xifrem la columna DNI
+
+<br>
+
 ![Imatge5](Imatges/DataMasking4.jpg)
 
 <br>
