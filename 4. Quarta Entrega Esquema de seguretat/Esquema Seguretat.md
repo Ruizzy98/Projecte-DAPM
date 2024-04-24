@@ -16,7 +16,7 @@ GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO admins;
 ```
 Donar accés complet a la base de dades:
 ```
-GRANT ALL PRIVILEGES ON DATABASE "hOSPIAL ESPERO QUE EL FINAL" TO admins;
+GRANT ALL PRIVILEGES ON DATABASE "HOSPIAL ESPERO QUE EL FINAL" TO admins;
 ```
 Donar permisos de creació de taules i roles:
 ```
