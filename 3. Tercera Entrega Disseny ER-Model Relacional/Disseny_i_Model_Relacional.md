@@ -90,11 +90,11 @@ data_hora TIMESTAMP NOT NULL,
 diagnostic VARCHAR (255), 
 id_pacient INT, 
 CONSTRAINT id_pacient_visita_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
+);
 ```
 Taula Personal_Medic
 --------------------
 ```
-);
 CREATE TABLE PERSONAL_MEDIC( 
 id_medic SERIAL PRIMARY KEY UNIQUE,
 especialitat VARCHAR(25) NOT NULL, 
