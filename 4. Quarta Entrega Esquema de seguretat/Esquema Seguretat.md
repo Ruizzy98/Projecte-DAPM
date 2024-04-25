@@ -168,7 +168,7 @@ Xifrem la columna DNI
 <br>
 
 # Readme
-#### [Portada](https://github.com/miguelIH/Projecte-Intermodular/blob/main/Portada%20Projecte%20Modular.md)
+#### [1. 1. Primera Entrega Planificació del projecte (BD + PRG) ](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/1.%20Primera%20Entrega%20Planificaci%C3%B3%20del%20projecte%20(BD%20%2B%20PRG))
 #### [Annex_2_Connectivitat_i_login](https://github.com/miguelIH/Projecte-Intermodular/tree/main/Annex2/Projecte_Hospital)
 #### [Annex_3_Bloc_de_manteniment](https://github.com/miguelIH/Projecte-Intermodular/blob/main/Annex_3_Bloc_de_manteniment.md)
 #### [Annex_4_Bloc_de_consultes_i_informess](https://github.com/miguelIH/Projecte-Intermodular/blob/main/Annex_4_Bloc_de_consultes_i_informes.md)
