@@ -24,7 +24,7 @@ Per confirmar que tot està correcte, haurem de fer la següent sentencia:
 ```
 SELECT * FROM deus(4);
 ```
-![Imatge1](Imatges\Image 2.png)
+![Imatge1](Imatges\Image.png)
 
 Creem una funció per la consulta
 ```
@@ -60,4 +60,4 @@ Per confirmar que tot està correcte, haurem de fer la següent sentencia:
 ```
 SELECT * FROM hola21('2024-04-21');
 ````
-![Imatge1](Imatges\Image.png)
+![Imatge1](Imatges\Image2.png)
