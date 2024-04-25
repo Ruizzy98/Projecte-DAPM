@@ -66,7 +66,8 @@ id_pacient SERIAL PRIMARY KEY UNIQUE,
 nom VARCHAR(25) NOT NULL, 
 cognom VARCHAR(50) NOT NULL, 
 id_reserva INT, id_operacio INT, 
-CONSTRAINT pacient_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA (id_reserva));
+CONSTRAINT pacient_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA (id_reserva)
+);
 ```
 Taula Operacio
 -------------
