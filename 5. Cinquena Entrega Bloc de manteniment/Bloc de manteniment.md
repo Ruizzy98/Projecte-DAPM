@@ -24,7 +24,7 @@ Per confirmar que tot està correcte, haurem de fer la següent sentencia:
 ```
 SELECT * FROM deus(4);
 ```
-![Imatge1](Imatges\Image.png)
+![Imatge1](Imatges\Image 2.png)
 
 Creem una funció per la consulta
 ```
