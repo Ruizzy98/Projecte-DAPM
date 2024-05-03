@@ -24,11 +24,11 @@ Per confirmar que tot està correcte, haurem de fer la següent sentencia:
 ```
 SELECT * FROM deus(4);
 ```
-![Imatge1](Imatges\image.png)
+![imatge1](Imatges/image.png)<br>
 
 Creem una funció per la consulta
 ```
-CREATE OR REPLACE FUNCTION hola21(
+CREATE OR REPLACE FUNCTION data_consulta(
     fecha_consulta DATE
 )
 RETURNS TABLE (
@@ -58,6 +58,6 @@ $$ LANGUAGE plpgsql;
 ```
 Per confirmar que tot està correcte, haurem de fer la següent sentencia:
 ```
-SELECT * FROM hola21('2024-04-21');
+SELECT * FROM data_consulta('2024-04-21');
 ````
-![Imatge2](Imatges\image2.png)
+![imatge2](Imatges/image2.png)<br>
