@@ -24,6 +24,16 @@ cognom VARCHAR(50) NOT NULL,
 dni CHAR(9) NOT NULL 
 );
 ```
+Taula Personal_Vari
+-------------------
+```
+CREATE TABLE PERSONAL_VARI( 
+id_vari SERIAL PRIMARY KEY UNIQUE, 
+tipus_de_feina VARCHAR(25) NOT NULL, 
+id_personal INT, 
+CONSTRAINT personals_vari_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal) 
+);
+```
 Taula Pacient
 -------------
 ```
@@ -73,10 +83,8 @@ CREATE TABLE RESERVA (
 id_reserva SERIAL PRIMARY KEY UNIQUE,
 dia_ingres DATE NOT NULL, 
 dia_sortida DATE NOT NULL, 
-num_habitacio INT,
-id_pacient INT,
-CONSTRAINT reserva_num_habitacio_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO (num_habitacio),
-CONSTRAINT reserva_pacient_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
+nom_quirofan CHAR(4),
+CONSTRAINT reserva_nom_quirofan_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN (nom_quirofan)
 ); 
 ```
 Taula Personal_Medic
@@ -109,24 +117,12 @@ Taula Operacio
 ```
 CREATE TABLE OPERACIO (
 id_operacio SERIAL PRIMARY KEY UNIQUE,
-nom_quirofan CHAR(4),
 id_pacient INT,
 id_medic INT,
 id_reserva INT,
-CONSTRAINT nom_quirofan_operacio_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan),
 CONSTRAINT pacient_operacio_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient),
 CONSTRAINT medic_operacio_fk FOREIGN KEY (id_medic) REFERENCES PERSONAL_MEDIC (id_medic),
 CONSTRAINT reserva_operacio_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva)
-);
-```
-Taula Personal_Vari
--------------------
-```
-CREATE TABLE PERSONAL_VARI( 
-id_vari SERIAL PRIMARY KEY UNIQUE, 
-tipus_de_feina VARCHAR(25) NOT NULL, 
-id_personal INT, 
-CONSTRAINT personals_vari_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal) 
 );
 ```
 Taula Personal_Infermeria
@@ -149,9 +145,7 @@ Taula Aparell_Medic
 ```
 CREATE TABLE APARELL_MEDIC (
 id_aparell_medic SERIAL PRIMARY KEY UNIQUE ,
-tipus_de_aparell VARCHAR(25) NOT NULL, 
-quantitat INT, 
-nom_quirofan CHAR(4)
+tipus_de_aparell VARCHAR(25) NOT NULL
 );
 ```
 Taula Quirofan_Aparell_Medic
@@ -173,6 +167,19 @@ id_visita INT,
 id_medicament INT, 
 CONSTRAINT id_visita_fk FOREIGN KEY (id_visita) REFERENCES VISITA(id_visita), 
 CONSTRAINT id_medicament_fk FOREIGN KEY (id_medicament) REFERENCES MEDICAMENT(id_medicament) 
+);
+```
+Taula PacienT_ingressat
+-----------------------
+```
+CREATE TABLE PACIENT_INGRESSAT (
+id_ingressat SERIAL PRIMARY KEY UNIQUE,
+dia_ingres DATE,
+dia_sortida DATE,
+id_pacient INT,
+num_habitacio INT,
+CONSTRAINT pacient_pacient_ingressat_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient),
+CONSTRAINT num_habitacio_pacient_ingressat_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO(num_habitacio)
 );
 ```
 
