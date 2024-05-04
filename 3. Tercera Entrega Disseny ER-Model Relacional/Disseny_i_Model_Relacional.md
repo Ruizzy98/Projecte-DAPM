@@ -48,6 +48,16 @@ id_reserva INT, num_plantes INT,
 CONSTRAINT num_planta_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA(num_plantes) 
 );
 ```
+Taula Habitacio
+---------------
+```
+CREATE TABLE HABITACIO ( 
+num_habitacio SERIAL PRIMARY KEY UNIQUE,
+num_plantes INT, 
+id_reserva INT, 
+CONSTRAINT planta_habitacio_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA (num_plantes), 
+); 
+```
 Taula Reserva
 -------------
 ```
@@ -56,7 +66,9 @@ id_reserva SERIAL PRIMARY KEY UNIQUE,
 dia_ingres DATE NOT NULL, 
 dia_sortida DATE NOT NULL, 
 nom_quirofan CHAR(4),
-CONSTRAINT reserva_quirofan_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN (nom_quirofan)
+num_habitacio INT,
+CONSTRAINT reserva_quirofan_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN (nom_quirofan),
+CONSTRAINT reserva_num_habitacio_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO (num_habitacio)
 ); 
 ```
 Taula Pacient
@@ -110,17 +122,6 @@ CONSTRAINT personals_medic_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_
 CONSTRAINT visita_medic_fk FOREIGN KEY (id_visita) REFERENCES VISITA (id_visita),
 CONSTRAINT operacio_medic_fk FOREIGN KEY (id_operacio) REFERENCES OPERACIO (id_operacio), 
 CONSTRAINT reserva_medic_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA (id_reserva) 
-); 
-```
-Taula Habitacio
----------------
-```
-CREATE TABLE HABITACIO ( 
-num_habitacio SERIAL PRIMARY KEY UNIQUE,
-num_plantes INT, 
-id_reserva INT, 
-CONSTRAINT planta_habitacio_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA (num_plantes), 
-CONSTRAINT habitacio_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva) 
 ); 
 ```
 Taula Personal_Vari
@@ -302,12 +303,15 @@ INSERT INTO PERSONAL_INFERMERIA (id_infermeria, estudis, especialitat, curriculu
 Insert Habitacio
 ---------------
 ```
-INSERT INTO HABITACIO (num_habitacio, num_plantes, id_reserva) VALUES
-    (1, 1, 1),
-    (2, 2, 2),
-    (3, 3, 3),
-    (4, 4, 4),
-    (5, 5, 5);
+INSERT INTO HABITACIO (num_habitacio, num_plantes) VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 4),
+    (5, 5),
+    (6,1),
+    (7,2),
+    (8,1);
 ```
 Insert Personal_Vari
 --------------------
