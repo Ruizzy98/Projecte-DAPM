@@ -111,10 +111,12 @@ CREATE TABLE OPERACIO (
 id_operacio SERIAL PRIMARY KEY UNIQUE,
 nom_quirofan CHAR(4),
 id_pacient INT,
-id_medic INT, 
-CONSTRAINT id_reserva_quirofan_operacio_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan),
+id_medic INT,
+id_reserva INT,
+CONSTRAINT nom_quirofan_operacio_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan),
 CONSTRAINT pacient_operacio_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient),
-CONSTRAINT medic_operacio_fk FOREIGN KEY (id_medic) REFERENCES PERSONAL_MEDIC (id_medic)
+CONSTRAINT medic_operacio_fk FOREIGN KEY (id_medic) REFERENCES PERSONAL_MEDIC (id_medic),
+CONSTRAINT reserva_operacio_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva)
 );
 ```
 Taula Personal_Vari
@@ -198,6 +200,16 @@ INSERT INTO PERSONAL (id_personal, nom, cognom, dni) VALUES
     (9, 'Joan', 'Flores', '55789012E'),
     (10, 'Ricard', 'Romero', '56789012E');
 ```
+Insert Pacient
+--------------
+```
+INSERT INTO PACIENT (id_pacient, nom, cognom) VALUES
+    (1, 'Pablo', 'González'),
+    (2, 'Clara', 'Díaz'),
+    (3, 'María', 'Ruiz'),
+    (4, 'Roberto', 'Martín'),
+    (5, 'Sara', 'Hernández');
+```
 Insert Planta
 -------------
 ```
@@ -207,6 +219,19 @@ INSERT INTO PLANTA (num_plantes) VALUES
     (3),
     (4),
     (5);
+```
+Insert Habitacio
+---------------
+```
+INSERT INTO HABITACIO (num_habitacio, num_plantes) VALUES
+    (1, 1),
+    (2, 2),
+    (3, 3),
+    (4, 4),
+    (5, 5),
+    (6,1),
+    (7,2),
+    (8,1);
 ```
 Insert Visita
 -------------
@@ -249,16 +274,6 @@ INSERT INTO MEDICAMENT (id_medicament, nom) VALUES
     (4, 'Amoxicilina'),
     (5, 'Loratadina');
 ```
-Insert Pacient
---------------
-```
-INSERT INTO PACIENT (id_pacient, nom, cognom) VALUES
-    (1, 'Pablo', 'González'),
-    (2, 'Clara', 'Díaz'),
-    (3, 'María', 'Ruiz'),
-    (4, 'Roberto', 'Martín'),
-    (5, 'Sara', 'Hernández');
-```
 Insert Operacio
 ---------------
 ```
@@ -289,19 +304,6 @@ INSERT INTO PERSONAL_INFERMERIA (id_infermeria, estudis, especialitat, curriculu
     (3, 'Màster en Cures Intensives', 'Cures Intensives', 'Experiència en UCI',8, 3, 3),
     (4, 'Grau en Infermeria', 'Cirurgia', 'Especialització en cures pre i postoperatoris', 9,4, 4),
     (5, 'Diplomatura en Infermeria', 'Geriatría', 'Experiència en atenció a persones grans',10, 5, 5);
-```
-Insert Habitacio
----------------
-```
-INSERT INTO HABITACIO (num_habitacio, num_plantes) VALUES
-    (1, 1),
-    (2, 2),
-    (3, 3),
-    (4, 4),
-    (5, 5),
-    (6,1),
-    (7,2),
-    (8,1);
 ```
 Insert Personal_Vari
 --------------------
