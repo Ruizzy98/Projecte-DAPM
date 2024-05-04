@@ -55,7 +55,7 @@ CREATE TABLE HABITACIO (
 num_habitacio SERIAL PRIMARY KEY UNIQUE,
 num_plantes INT, 
 id_reserva INT, 
-CONSTRAINT planta_habitacio_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA (num_plantes), 
+CONSTRAINT planta_habitacio_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA (num_plantes)
 ); 
 ```
 Taula Reserva
