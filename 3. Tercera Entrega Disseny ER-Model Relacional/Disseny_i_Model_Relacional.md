@@ -64,9 +64,7 @@ CREATE TABLE RESERVA (
 id_reserva SERIAL PRIMARY KEY UNIQUE,
 dia_ingres DATE NOT NULL, 
 dia_sortida DATE NOT NULL, 
-nom_quirofan CHAR(4),
 num_habitacio INT,
-CONSTRAINT reserva_quirofan_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN (nom_quirofan),
 CONSTRAINT reserva_num_habitacio_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO (num_habitacio)
 ); 
 ```
@@ -240,13 +238,13 @@ INSERT INTO QUIROFAN (nom_quirofan,num_plantes) VALUES
 Insert Reserva
 --------------
 ```
-INSERT INTO RESERVA (id_reserva, dia_ingres, dia_sortida,nom_quirofan) VALUES
-    (1, '2024-04-18', '2024-04-20','Q101'),
-    (2, '2024-04-19', '2024-04-21','Q102'),
-    (3, '2024-04-20', '2024-04-22','Q103'),
-    (4, '2024-04-21', '2024-04-23','Q104'),
-    (5, '2024-04-22', '2024-04-24','Q105'),
-    (6, '2024-04-13', '2024-04-26','Q101');
+INSERT INTO RESERVA (id_reserva, dia_ingres, dia_sortida) VALUES
+    (1, '2024-04-18', '2024-04-20'),
+    (2, '2024-04-19', '2024-04-21'),
+    (3, '2024-04-20', '2024-04-22'),
+    (4, '2024-04-21', '2024-04-23'),
+    (5, '2024-04-22', '2024-04-24'),
+    (6, '2024-04-13', '2024-04-26');
 ```
 Insert Medicament
 -----------------
