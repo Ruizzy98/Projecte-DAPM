@@ -226,15 +226,27 @@ INSERT INTO VISITA (id_visita, data_hora, diagnostic) VALUES
     (4, '2024-04-21 11:45:00', 'Fiebre'),
     (5, '2024-04-22 08:00:00', 'Consulta general');
 ```
+Insert Quirofan
+---------------
+```
+INSERT INTO QUIROFAN (nom_quirofan,num_plantes) VALUES
+    ('Q101',1),
+    ('Q102',2),
+    ('Q103',3),
+    ('Q104',4),
+    ('Q105',5),
+    ('Q106',1);
+```
 Insert Reserva
 --------------
 ```
-INSERT INTO RESERVA (id_reserva, dia_ingres, dia_sortida) VALUES
-    (1, '2024-04-18', '2024-04-20'),
-    (2, '2024-04-19', '2024-04-21'),
-    (3, '2024-04-20', '2024-04-22'),
-    (4, '2024-04-21', '2024-04-23'),
-    (5, '2024-04-22', '2024-04-24');
+INSERT INTO RESERVA (id_reserva, dia_ingres, dia_sortida,nom_quirofan) VALUES
+    (1, '2024-04-18', '2024-04-20','Q101'),
+    (2, '2024-04-19', '2024-04-21','Q102'),
+    (3, '2024-04-20', '2024-04-22','Q103'),
+    (4, '2024-04-21', '2024-04-23','Q104'),
+    (5, '2024-04-22', '2024-04-24','Q105'),
+    (6, '2024-04-13', '2024-04-26','Q101');
 ```
 Insert Medicament
 -----------------
@@ -245,16 +257,6 @@ INSERT INTO MEDICAMENT (id_medicament, nom) VALUES
     (3, 'Omeprazol'),
     (4, 'Amoxicilina'),
     (5, 'Loratadina');
-```
-Insert Quirofan
----------------
-```
-INSERT INTO QUIROFAN (nom_quirofan, id_reserva, num_plantes) VALUES
-    ('Q101', 1, 1),
-    ('Q102', 2, 2),
-    ('Q103', 3, 3),
-    ('Q104', 4, 4),
-    ('Q105', 5, 5);
 ```
 Insert Pacient
 --------------
