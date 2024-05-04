@@ -31,15 +31,6 @@ CREATE TABLE PLANTA (
 num_plantes SERIAL PRIMARY KEY UNIQUE 
 );
 ```
-Taula Reserva
--------------
-```
-CREATE TABLE RESERVA ( 
-id_reserva SERIAL PRIMARY KEY UNIQUE,
-dia_ingres DATE NOT NULL, 
-dia_sortida DATE NOT NULL 
-); 
-```
 Taula Medicament
 ----------------
 ```
@@ -54,9 +45,19 @@ Taula Quirofan
 CREATE TABLE QUIROFAN ( 
 nom_quirofan CHAR(4) PRIMARY KEY UNIQUE, 
 id_reserva INT, num_plantes INT, 
-CONSTRAINT num_planta_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA(num_plantes), 
-CONSTRAINT quirofans_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva) 
+CONSTRAINT num_planta_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA(num_plantes) 
 );
+```
+Taula Reserva
+-------------
+```
+CREATE TABLE RESERVA ( 
+id_reserva SERIAL PRIMARY KEY UNIQUE,
+dia_ingres DATE NOT NULL, 
+dia_sortida DATE NOT NULL, 
+nom_quirofan CHAR(4),
+CONSTRAINT reserva_quirofan_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN (nom_quirofan)
+); 
 ```
 Taula Pacient
 -------------
