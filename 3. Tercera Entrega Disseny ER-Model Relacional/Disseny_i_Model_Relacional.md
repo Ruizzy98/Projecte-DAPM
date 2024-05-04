@@ -24,6 +24,15 @@ cognom VARCHAR(50) NOT NULL,
 dni CHAR(9) NOT NULL 
 );
 ```
+Taula Pacient
+-------------
+```
+CREATE TABLE PACIENT ( 
+id_pacient SERIAL PRIMARY KEY UNIQUE, 
+nom VARCHAR(25) NOT NULL, 
+cognom VARCHAR(50) NOT NULL, 
+);
+```
 Taula Planta
 ------------
 ```
@@ -65,43 +74,10 @@ id_reserva SERIAL PRIMARY KEY UNIQUE,
 dia_ingres DATE NOT NULL, 
 dia_sortida DATE NOT NULL, 
 num_habitacio INT,
-CONSTRAINT reserva_num_habitacio_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO (num_habitacio)
-); 
-```
-Taula Pacient
--------------
-```
-CREATE TABLE PACIENT ( 
-id_pacient SERIAL PRIMARY KEY UNIQUE, 
-nom VARCHAR(25) NOT NULL, 
-cognom VARCHAR(50) NOT NULL, 
-id_reserva INT, id_operacio INT, 
-CONSTRAINT pacient_reserva_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA (id_reserva)
-);
-```
-Taula Operacio
--------------
-```
-CREATE TABLE OPERACIO (
-id_operacio SERIAL PRIMARY KEY UNIQUE,
-id_reserva INT, 
-nom_quirofan CHAR(4),
 id_pacient INT,
-CONSTRAINT id_reserva_operacio_operacio_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA(id_reserva), 
-CONSTRAINT id_reserva_quirofan_operacio_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan),
-CONSTRAINT pacient_operacio_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
-);
-```
-Taula Visita
-------------
-```
-CREATE TABLE VISITA( 
-id_visita SERIAL PRIMARY KEY UNIQUE, 
-data_hora TIMESTAMP NOT NULL, 
-diagnostic VARCHAR (255), 
-id_pacient INT, 
-CONSTRAINT id_pacient_visita_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
-);
+CONSTRAINT reserva_num_habitacio_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO (num_habitacio)
+CONSTRAINT reserva_pacient_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
+); 
 ```
 Taula Personal_Medic
 --------------------
@@ -112,14 +88,34 @@ especialitat VARCHAR(25) NOT NULL,
 curriculum VARCHAR(255), 
 estudis VARCHAR(255), 
 id_personal INT, 
-id_visita INT,
-id_operacio INT, 
-id_reserva INT,
 CONSTRAINT personals_medic_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal), 
-CONSTRAINT visita_medic_fk FOREIGN KEY (id_visita) REFERENCES VISITA (id_visita),
-CONSTRAINT operacio_medic_fk FOREIGN KEY (id_operacio) REFERENCES OPERACIO (id_operacio), 
-CONSTRAINT reserva_medic_fk FOREIGN KEY (id_reserva) REFERENCES RESERVA (id_reserva) 
 ); 
+```
+Taula Visita
+------------
+```
+CREATE TABLE VISITA( 
+id_visita SERIAL PRIMARY KEY UNIQUE, 
+data_hora TIMESTAMP NOT NULL, 
+diagnostic VARCHAR (255), 
+id_pacient INT,
+id_medic INT,
+CONSTRAINT id_pacient_visita_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
+CONSTRAINT medic_visita_fk FOREIGN KEY (id_medic) REFERENCES PERSONAL_MEDIC (id_medic)
+);
+```
+Taula Operacio
+-------------
+```
+CREATE TABLE OPERACIO (
+id_operacio SERIAL PRIMARY KEY UNIQUE,
+nom_quirofan CHAR(4),
+id_pacient INT,
+id_medic INT, 
+CONSTRAINT id_reserva_quirofan_operacio_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan),
+CONSTRAINT pacient_operacio_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient),
+CONSTRAINT medic_operacio_fk (id_medic) REFERENCES PERSONAL_MEDIC (id_medic)
+);
 ```
 Taula Personal_Vari
 -------------------
@@ -139,11 +135,9 @@ id_infermeria SERIAL PRIMARY KEY UNIQUE,
 estudis VARCHAR(255), especialitat VARCHAR(25) NOT NULL, 
 curriculum VARCHAR(255),
 id_personal INT, 
-id_operacio INT,
 num_plantes INT,
 id_medic INT,
 CONSTRAINT personals_infermeria_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal), 
-CONSTRAINT operacio_infermeria_fk FOREIGN KEY (id_operacio) REFERENCES OPERACIO (id_operacio),
 CONSTRAINT personal_infermeria_planta_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA (num_plantes),
 CONSTRAINT personal_infermeria_medic_fk FOREIGN KEY (id_medic) REFERENCES PERSONAL_MEDIC (id_medic)
 );
@@ -198,11 +192,11 @@ INSERT INTO PERSONAL (id_personal, nom, cognom, dni) VALUES
     (3, 'Carlos', 'García', '34567890C'),
     (4, 'Ana', 'Sánchez', '45678901D'),
     (5, 'David', 'Rodríguez', '56789012E'),
-	(6, 'Jaume', 'Sanchez', '96789012E'),
-	(7, 'Daniel', 'Albo', '33789012E'),
-	(8, 'Guillem', 'Garriga', '44789012E'),
-	(9, 'Joan', 'Flores', '55789012E'),
-	(10, 'Ricard', 'Romero', '56789012E');
+    (6, 'Jaume', 'Sanchez', '96789012E'),
+    (7, 'Daniel', 'Albo', '33789012E'),
+    (8, 'Guillem', 'Garriga', '44789012E'),
+    (9, 'Joan', 'Flores', '55789012E'),
+    (10, 'Ricard', 'Romero', '56789012E');
 ```
 Insert Planta
 -------------
@@ -238,13 +232,12 @@ INSERT INTO QUIROFAN (nom_quirofan,num_plantes) VALUES
 Insert Reserva
 --------------
 ```
-INSERT INTO RESERVA (id_reserva, dia_ingres, dia_sortida) VALUES
-    (1, '2024-04-18', '2024-04-20'),
-    (2, '2024-04-19', '2024-04-21'),
-    (3, '2024-04-20', '2024-04-22'),
-    (4, '2024-04-21', '2024-04-23'),
-    (5, '2024-04-22', '2024-04-24'),
-    (6, '2024-04-13', '2024-04-26');
+INSERT INTO RESERVA (id_reserva, dia_ingres, dia_sortida,num_habitacio,id_pacient) VALUES
+    (1, '2024-04-18', '2024-04-20',1,1),
+    (2, '2024-04-19', '2024-04-21',2,2),
+    (3, '2024-04-20', '2024-04-22',3,3),
+    (4, '2024-04-21', '2024-04-23',4,4),
+    (5, '2024-04-22', '2024-04-24',5,5);
 ```
 Insert Medicament
 -----------------
@@ -259,32 +252,32 @@ INSERT INTO MEDICAMENT (id_medicament, nom) VALUES
 Insert Pacient
 --------------
 ```
-INSERT INTO PACIENT (id_pacient, nom, cognom, id_reserva) VALUES
-    (1, 'Pablo', 'González', 1),
-    (2, 'Clara', 'Díaz',  2),
-    (3, 'María', 'Ruiz', 3),
-    (4, 'Roberto', 'Martín', 4),
-    (5, 'Sara', 'Hernández',  5);
+INSERT INTO PACIENT (id_pacient, nom, cognom) VALUES
+    (1, 'Pablo', 'González'),
+    (2, 'Clara', 'Díaz'),
+    (3, 'María', 'Ruiz'),
+    (4, 'Roberto', 'Martín'),
+    (5, 'Sara', 'Hernández');
 ```
 Insert Operacio
 ---------------
 ```
-INSERT INTO OPERACIO (id_operacio, id_reserva, nom_quirofan,id_pacient) VALUES
-    (1, 1, 'Q101',2),
-    (2, 2, 'Q102',1),
-    (3, 3, 'Q103',2),
-    (4, 4, 'Q104',4),
-    (5, 5, 'Q105',3);
+INSERT INTO OPERACIO (id_operacio, id_reserva, nom_quirofan,id_pacient,id_medic) VALUES
+    (1, 1, 'Q101',2,1),
+    (2, 2, 'Q102',1,2),
+    (3, 3, 'Q103',2,3),
+    (4, 4, 'Q104',4,4),
+    (5, 5, 'Q105',3,5);
 ```
 Insert Personal_Medic
 ---------------------
 ```
-INSERT INTO PERSONAL_MEDIC (id_medic, especialitat, curriculum, estudis, id_personal, id_visita,id_operacio, id_reserva) VALUES
-    (1, 'Cardiologia', 'Especialista en malalties del cor', 'Llicenciatura en Medicina', 1, 1, 1,1),
-    (2, 'Pediatria', 'Especialista en atenció pediàtrica', 'Llicenciatura en Medicina', 2, 2, 2,2),
-    (3, 'Traumatologia', 'Especialista en traumatismes i lesions', 'Llicenciatura en Medicina', 3, 3, 3,3),
-    (4, 'Cirugia General', 'Especialista en cirurgia d`organs interns', 'Llicenciatura en Medicina', 4, 4, 4,4),
-    (5, 'Geriatría', 'Especialista en geriatria i cures a persones grans', 'Llicenciatura en Medicina', 5, 5, 5,5);
+INSERT INTO PERSONAL_MEDIC (id_medic, especialitat, curriculum, estudis, id_personal) VALUES
+    (1, 'Cardiologia', 'Especialista en malalties del cor', 'Llicenciatura en Medicina', 1),
+    (2, 'Pediatria', 'Especialista en atenció pediàtrica', 'Llicenciatura en Medicina', 2),
+    (3, 'Traumatologia', 'Especialista en traumatismes i lesions', 'Llicenciatura en Medicina', 3),
+    (4, 'Cirugia General', 'Especialista en cirurgia d`organs interns', 'Llicenciatura en Medicina', 4),
+    (5, 'Geriatría', 'Especialista en geriatria i cures a persones grans', 'Llicenciatura en Medicina', 5);
 ```
 Insert Personal_Infermeria
 --------------------------
