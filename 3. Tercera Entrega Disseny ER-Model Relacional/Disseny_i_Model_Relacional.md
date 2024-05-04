@@ -44,7 +44,7 @@ Taula Quirofan
 ```
 CREATE TABLE QUIROFAN ( 
 nom_quirofan CHAR(4) PRIMARY KEY UNIQUE, 
-id_reserva INT, num_plantes INT, 
+num_plantes INT, 
 CONSTRAINT num_planta_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA(num_plantes) 
 );
 ```
@@ -54,7 +54,6 @@ Taula Habitacio
 CREATE TABLE HABITACIO ( 
 num_habitacio SERIAL PRIMARY KEY UNIQUE,
 num_plantes INT, 
-id_reserva INT, 
 CONSTRAINT planta_habitacio_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA (num_plantes)
 ); 
 ```
