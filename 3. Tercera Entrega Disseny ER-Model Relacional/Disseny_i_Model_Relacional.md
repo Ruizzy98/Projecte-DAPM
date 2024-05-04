@@ -30,7 +30,7 @@ Taula Pacient
 CREATE TABLE PACIENT ( 
 id_pacient SERIAL PRIMARY KEY UNIQUE, 
 nom VARCHAR(25) NOT NULL, 
-cognom VARCHAR(50) NOT NULL, 
+cognom VARCHAR(50) NOT NULL
 );
 ```
 Taula Planta
@@ -75,7 +75,7 @@ dia_ingres DATE NOT NULL,
 dia_sortida DATE NOT NULL, 
 num_habitacio INT,
 id_pacient INT,
-CONSTRAINT reserva_num_habitacio_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO (num_habitacio)
+CONSTRAINT reserva_num_habitacio_fk FOREIGN KEY (num_habitacio) REFERENCES HABITACIO (num_habitacio),
 CONSTRAINT reserva_pacient_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
 ); 
 ```
@@ -88,7 +88,7 @@ especialitat VARCHAR(25) NOT NULL,
 curriculum VARCHAR(255), 
 estudis VARCHAR(255), 
 id_personal INT, 
-CONSTRAINT personals_medic_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal), 
+CONSTRAINT personals_medic_fk FOREIGN KEY (id_personal) REFERENCES PERSONAL (id_personal)
 ); 
 ```
 Taula Visita
@@ -100,7 +100,7 @@ data_hora TIMESTAMP NOT NULL,
 diagnostic VARCHAR (255), 
 id_pacient INT,
 id_medic INT,
-CONSTRAINT id_pacient_visita_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient)
+CONSTRAINT id_pacient_visita_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient),
 CONSTRAINT medic_visita_fk FOREIGN KEY (id_medic) REFERENCES PERSONAL_MEDIC (id_medic)
 );
 ```
@@ -114,7 +114,7 @@ id_pacient INT,
 id_medic INT, 
 CONSTRAINT id_reserva_quirofan_operacio_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan),
 CONSTRAINT pacient_operacio_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient),
-CONSTRAINT medic_operacio_fk (id_medic) REFERENCES PERSONAL_MEDIC (id_medic)
+CONSTRAINT medic_operacio_fk FOREIGN KEY (id_medic) REFERENCES PERSONAL_MEDIC (id_medic)
 );
 ```
 Taula Personal_Vari
