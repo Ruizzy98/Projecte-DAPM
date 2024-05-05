@@ -6,8 +6,27 @@
 
 ![imatge3](Imatges/Replicacio3.png)<br>
 
+![imatge4](Imatges/Replicacio4.png)<br>
 
+![imatge5](Imatges/Replicacio5.png)<br>
 
+![imatge6](Imatges/Replicacio6.png)<br>
+
+![imatge7](Imatges/Replicacio7.png)<br>
+
+![imatge8](Imatges/Replicacio8.png)<br>
+
+![imatge9](Imatges/Replicacio9.png)<br>
+
+![imatge10](Imatges/Replicacio10.png)<br>
+
+![imatge11](Imatges/Replicacio11.png)<br>
+
+![imatge12](Imatges/Replicacio12.png)<br>
+
+![imatge13](Imatges/Replicacio13.png)<br>
+
+![imatge14](Imatges/Replicacio14.png)<br>
 
 
 
