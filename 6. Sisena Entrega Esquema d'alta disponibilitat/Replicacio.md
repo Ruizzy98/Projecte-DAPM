@@ -85,13 +85,13 @@ Despres executarem la comanda de replicació d’arxius:
 ```
 pg_basebackup -h 192.168.56.107 -U replicator -D /var/lib/postgresql/15/main/ -Fp -Xs -R
 ```
-
+![imatge10](Imatges/Replicacio10.png)<br>
 
 Iniciar el servei:
 
-![imatge10](Imatges/Replicacio10.png)<br>
-
 ![imatge11](Imatges/Replicacio11.png)<br>
+
+
 
 ![imatge12](Imatges/Replicacio12.png)<br>
 
