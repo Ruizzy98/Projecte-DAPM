@@ -27,8 +27,26 @@ Ara haurem de seguir les següents comandes:
 sudo apt install onedrive
 ```
 Fet això haurem de donar-li permisos al script, i executar-ho.
+```
+sudo chmod 777 onedrive.sh
+```
+```
+sudo ./onedrive.sh
+```
 ![imatge5](Imatges/Backup5.jpg)<br>
 Ara reiniciem el servidor, i seguim les comandes:
+Primer de tot revisem quina versió tenim del Debian perquè després és important saber-ho.
+```
+lsb_release -a
+```
+Com nosaltres tenim un Debian 12, descarreguem la clau pel nostre Debian:
+```
+wget -qO - https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_12/Release.key | gpg --dearmor | sudo tee /usr/share/keyrings/obs-onedrive.gpg > /dev/null
+```
+Després posem aquest comanda:
+```
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/obs-onedrive.gpg] https://download.opensuse.org/repositories/home:/npreining:/debian-ubuntu-onedrive/Debian_12/ ./" | sudo tee /etc/apt/sources.list.d/onedrive.list
+```
 ![imatge5](Imatges/Backup5.1.jpg)<br>
 Ara executem la següent comanda.
 ```
