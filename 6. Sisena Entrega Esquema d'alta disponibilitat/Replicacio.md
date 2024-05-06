@@ -41,28 +41,68 @@ wal_level = 'replica'
 hot_standby = on
 ```
 
-
 ![imatge2](Imatges/Replicacio2.png)<br>
 
 ![imatge3](Imatges/Replicacio3.png)<br>
 
 ![imatge4](Imatges/Replicacio4.png)<br>
 
+Crear usuari de replica al master:
+```
+CREATE ROLE replicator LOGIN REPLICATION ENCRYPTED PASSWORD '12345';
+```
 ![imatge5](Imatges/Replicacio5.png)<br>
 
+
+```
+SELECT * FROM pg_create_physical_replication_slot('replicator');
+```
 ![imatge6](Imatges/Replicacio6.png)<br>
 
+Habilitar la conexio de replica per la xarxa interna dels servidors, modificar arxiu /etc/postgresql/15/main/pg_hba.conf ( afegir al dos servidors):
+```
+host    replication     replicator      192.168.56.1/24         md5
+```
 ![imatge7](Imatges/Replicacio7.png)<br>
+Seguidament reiniciarem els dos servidors
 
+```
+/etc/init.d/postgresql restart
+```
+Per iniciar la replicació parem el postgres a slave:
+```
+/etc/init.d/postgresql stop
+```
 ![imatge8](Imatges/Replicacio8.png)<br>
 
+Seguidament amb l'usuari  postgres eliminarem la carpeta main
+```
+rm -R /var/lib/postgresql/15/main/
+```
 ![imatge9](Imatges/Replicacio9.png)<br>
 
+Despres executarem la comanda de replicació d’arxius:
+```
+pg_basebackup -h 192.168.56.107 -U replicator -D /var/lib/postgresql/15/main/ -Fp -Xs -R
+```
 ![imatge10](Imatges/Replicacio10.png)<br>
+
+Iniciar el servei:
 
 ![imatge11](Imatges/Replicacio11.png)<br>
 
+Verificacions de la replica
+Al Master:
+
+```
+SELECT * FROM pg_stat_replication;
+```
 ![imatge12](Imatges/Replicacio12.png)<br>
+
+Al slave:
+```
+SELECT * FROM pg_stat_wal_receiver;
+```
 
 ![imatge13](Imatges/Replicacio13.png)<br>
 
