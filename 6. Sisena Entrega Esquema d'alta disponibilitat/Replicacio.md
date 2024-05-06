@@ -3,16 +3,16 @@
 Primer de tot tindrem que instalar en el servidor de replica un paquet que es diu 'Anon':
 ```
 apt install pgxnclient postgresql-server-dev-15
-´´´
+```
 ```
 apt-get install make
-´´´
+```
 ```
 apt install gcc
-´´´
+```
 ```
 pgxn install postgresql_anonymizer
-´´´
+```
 Una vegada instalat tenim que modificar el seguent nano:
 ```
 nano /etc/postgresql/15/main/postgresql.conf
