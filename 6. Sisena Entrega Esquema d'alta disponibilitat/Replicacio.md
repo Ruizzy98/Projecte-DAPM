@@ -41,14 +41,24 @@ wal_level = 'replica'
 hot_standby = on
 ```
 
-
 ![imatge2](Imatges/Replicacio2.png)<br>
 
 ![imatge3](Imatges/Replicacio3.png)<br>
 
+
+Crear usuari de replica al master:
+```
+CREATE ROLE replicator LOGIN REPLICATION ENCRYPTED PASSWORD '12345';
+```
 ![imatge4](Imatges/Replicacio4.png)<br>
 
+```
+SELECT * FROM pg_create_physical_replication_slot('replicator');
+```
+
 ![imatge5](Imatges/Replicacio5.png)<br>
+
+Habilitar la conexio de replica per la xarxa interna dels servidors, modificar arxiu /etc/postgresql/15/main/pg_hba.conf ( afegir al dos servidors):
 
 ![imatge6](Imatges/Replicacio6.png)<br>
 
