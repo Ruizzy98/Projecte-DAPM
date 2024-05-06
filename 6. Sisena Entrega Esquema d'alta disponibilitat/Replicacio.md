@@ -91,9 +91,18 @@ Iniciar el servei:
 
 ![imatge11](Imatges/Replicacio11.png)<br>
 
+Verificacions de la replica
+Al Master:
 
-
+```
+SELECT * FROM pg_stat_replication;
+```
 ![imatge12](Imatges/Replicacio12.png)<br>
+
+Al slave:
+```
+SELECT * FROM pg_stat_wal_receiver;
+```
 
 ![imatge13](Imatges/Replicacio13.png)<br>
 
