@@ -60,13 +60,33 @@ SELECT * FROM pg_create_physical_replication_slot('replicator');
 ![imatge6](Imatges/Replicacio6.png)<br>
 
 Habilitar la conexio de replica per la xarxa interna dels servidors, modificar arxiu /etc/postgresql/15/main/pg_hba.conf ( afegir al dos servidors):
+```
+host    replication     replicator      192.168.56.1/24         md5
+```
+Seguidament reiniciarem els dos servidors
 
-
+```
+/etc/init.d/postgresql restart
+```
+Per iniciar la replicació parem el postgres a slave:
+```
+/etc/init.d/postgresql stop
+```
 ![imatge7](Imatges/Replicacio7.png)<br>
 
+Seguidament amb l'usuari  postgres eliminarem la carpeta main
+```
+rm -R /var/lib/postgresql/15/main/
+```
 ![imatge8](Imatges/Replicacio8.png)<br>
 
+Despres executarem la comanda de replicació d’arxius:
+```
+pg_basebackup -h 192.168.56.107 -U replicator -D /var/lib/postgresql/15/main/ -Fp -Xs -R
+```
 ![imatge9](Imatges/Replicacio9.png)<br>
+
+Iniciar el servei:
 
 ![imatge10](Imatges/Replicacio10.png)<br>
 
