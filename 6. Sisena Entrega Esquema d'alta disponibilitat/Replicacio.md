@@ -1,6 +1,6 @@
 # <p align="center">  Replicacio Actiu Pasiu </p>
 
-Primer de tot tindrem que instalar en el servidor de replica un paquet que es diu 'Anon':
+Primer de tot tindrem que instalar en el servidor de replica un paquet que es diu '# Anon':
 ```
 apt install pgxnclient postgresql-server-dev-15
 ```
