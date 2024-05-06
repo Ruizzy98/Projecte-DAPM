@@ -34,7 +34,9 @@ Seguidament al servidor slave tenim que posar la segunt informacio:
 ```
 listen_addresses = '*'
 ```
+```
 wal_level = 'replica'
+```
 ```
 hot_standby = on
 ```
