@@ -70,6 +70,7 @@ Una vegada fet, ens ha de sortir això per acceptar els permisos.
 Ara haurem de tornar a modificar el script del principi, per tal de fer les  còpies i comprimir-les en el OneDrive.
 <br>
 ![imatge8](Imatges/Backup8.jpg)<br>
+<br>
 Quan ja hem modificat el script, ho executem:
 ![imatge9](Imatges/OneDrive2.jpg)<br>
 <br>
