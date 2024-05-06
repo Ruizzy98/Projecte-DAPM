@@ -74,4 +74,4 @@ Quan ja hem modificat el script, ho executem:
 ![imatge9](Imatges/OneDrive2.jpg)<br>
 <br>
 Per últim comprovem que en el OneDrive tenim les còpies fetes en local.
-![imatge10](Imatges/OneDrive1.jpg)<br>
+![imatge10](Imatges/OneDrive.jpg)<br>
