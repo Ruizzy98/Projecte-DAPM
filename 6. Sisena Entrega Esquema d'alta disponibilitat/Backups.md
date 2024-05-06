@@ -60,9 +60,11 @@ En la línia 3 i 4 després posar la comanda, ens dona un enllaç que haurem de 
 ![imatge5](Imatges/Backup5.2.jpg)<br>
 <br>
 Ens ha de sortir això, i iniciem sessió.
+<br>
 ![imatge6](Imatges/Backup6.jpg)<br>
 
 Una vegada fet, ens ha de sortir això per acceptar els permisos.
+<br>
 ![imatge7](Imatges/Backup7.jpg)<br>
 <br>
 Ara haurem de tornar a modificar el script del principi, per tal de fer les  còpies i comprimir-les en el OneDrive.
