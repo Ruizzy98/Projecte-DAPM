@@ -17,7 +17,7 @@ Una vegada instalat tenim que modificar el seguent nano:
 ```
 nano /etc/postgresql/15/main/postgresql.conf
 ```
-Tenim que afegir la seguent informacio:
+Tenim que afegir la seguent informacio al servidor master:
 ```
 listen_addresses = '*'
 ```
@@ -28,6 +28,18 @@ I mes abaix tenim que posar aquesta comanda
 ```
 wal_level = 'replica'
 ```
+
+Seguidament al servidor slave tenim que posar la segunt informacio:
+
+```
+listen_addresses = '*'
+```
+wal_level = 'replica'
+```
+hot_standby = on
+```
+
+
 ![imatge2](Imatges/Replicacio2.png)<br>
 
 ![imatge3](Imatges/Replicacio3.png)<br>
