@@ -18,7 +18,7 @@ Backup OneDrive
 ---------------
 Una vegada feta les copies en local, passem a fer-les en el núvol. Per fer-ho en el meu cas ho sincronitza amb el OneDrive. <br>
 <br>
-Primer de tot creem un script com el següent:
+Primer de tot creem un script com el següent (pot ser en la mateixa ruta que en els backups en local):
 <br>
 ![imatge4](Imatges/Backup4.jpg)<br>
 <br>
