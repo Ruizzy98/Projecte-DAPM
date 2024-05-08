@@ -2,7 +2,7 @@
 
 <br>
 
-![Imatge2](Imagenes/Esquemabien.png)
+![Imatge2](Imagenes/Esquema.png)
 
 <br>
 
