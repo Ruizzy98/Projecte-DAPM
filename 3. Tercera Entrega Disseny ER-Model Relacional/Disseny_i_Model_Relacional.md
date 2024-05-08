@@ -1,4 +1,4 @@
-# <p align="center"> ANNEX 1 - MODEL ER </p>
+# <p align="center">  -MODEL ER </p>
 
 <br>
 
@@ -6,7 +6,7 @@
 
 <br>
 
-# <p align="center"> ANNEX 1 - ESQUEMA RELACIONAL </p>
+# <p align="center">  -ESQUEMA RELACIONAL </p>
 
 
 ![Imatge3](Imagenes/2.png)
