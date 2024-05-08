@@ -2,7 +2,7 @@
 
 <br>
 
-![Imatge_ModelER](Imagenes/Model_Relacional.png)
+![Imatge1](Imagenes/Esquema.png)
 
 <br>
 
