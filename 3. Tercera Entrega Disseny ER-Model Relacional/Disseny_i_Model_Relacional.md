@@ -9,7 +9,7 @@
 # <p align="center"> ANNEX 1 - ESQUEMA RELACIONAL </p>
 
 
-<img src="Imagenes/Esquema.png">
+![Imatge3](Imagenes/Model_Relacional.png)
 
 <br>
 
