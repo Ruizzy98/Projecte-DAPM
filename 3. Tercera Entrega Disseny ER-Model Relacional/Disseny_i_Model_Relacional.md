@@ -3,6 +3,7 @@
 <br>
 
 ![Imatge1](Imagenes/Esquema.png)
+![Imatge1](Imagenes/Esquemabien.png)
 
 <br>
 
