@@ -187,7 +187,7 @@ CONSTRAINT num_habitacio_pacient_ingressat_fk FOREIGN KEY (num_habitacio) REFERE
 
 <br>
 
-<h3>Inserts Provisionals per posar a prova els rols i el codi de manteniment</h3>
+Inserts **Provisionals** per posar a prova els **rols** i el **codi** de manteniment
 
 <br>
 
