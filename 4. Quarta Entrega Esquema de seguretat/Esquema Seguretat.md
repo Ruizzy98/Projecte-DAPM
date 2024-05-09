@@ -76,7 +76,7 @@ GRANT SELECT, UPDATE ON PACIENT, VISITA, OPERACIO, HABITACIO, PERSONAL_MEDIC, VI
 
 <br>
 
-**INFERMERS** (Cristiano_Ronaldo):
+**INFERMERS** (Josep):
 -	Accés a les taules de PACIENT, OPERACIO, HABITACIO, PERSONAL_INFERMERIA.
 -	Poden veure i actualitzar informació sobre pacients, assignació d'habitacions, assignació de personal d'infermeri i detalls de les operacions quirúrgiques.
 -	No haurien de tenir permisos per a modificar informació administrativa general o detalls mèdics específics, com les taules de RESERVA o MEDICAMENT.
@@ -86,8 +86,8 @@ CREATE ROLE infermers:
 ```
 Crear el usuari i assignar el rol:
 ```
-CREATE USER cristiano_ronaldo WITH PASSWORD 'CR7';
-GRANT infermers TO cristiano_ronaldo;
+CREATE USER Josep WITH PASSWORD 'jsp';
+GRANT infermers TO Josep;
 ```
 Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
 ```
