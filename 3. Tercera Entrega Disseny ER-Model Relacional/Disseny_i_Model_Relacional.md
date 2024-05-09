@@ -1,3 +1,16 @@
+# <p align="center">  -ESQUEMA RELACIONAL </p>
+Justificació
+------------
+-Primer de tot nosaltres hem fet una superclasse per a personal, perque considerem que es millor per tal de evitar redundancia. A més que nosaltres ho hem entenem aixì. 
+
+-Seguidament nosaltres pensem que tant **HABITACIO** i **QUIROFAN** son entitats febles perque depenen de la entitat **PLANTA**
+
+-Després nosaltres hem considerat que **APARELL MEDIC** pot estar distribuit en molts quirofans
+
+![Imatge3](Imagenes/2.png)
+
+<br>
+
 # <p align="center">  -MODEL ER </p>
 
 <br>
@@ -6,12 +19,6 @@
 
 <br>
 
-# <p align="center">  -ESQUEMA RELACIONAL </p>
-
-
-![Imatge3](Imagenes/2.png)
-
-<br>
 
 # <p align="center"> CREACIO DE TAULES </p>
 Taula Personal
