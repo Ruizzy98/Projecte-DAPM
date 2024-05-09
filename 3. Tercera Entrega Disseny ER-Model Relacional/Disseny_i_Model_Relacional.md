@@ -1,12 +1,13 @@
 # <p align="center">  -ESQUEMA RELACIONAL </p>
 Justificació
 ------------
--Primer de tot nosaltres hem fet una superclasse per a personal, perque considerem que es millor per tal de evitar redundancia. A més que nosaltres ho hem entenem aixì. 
+- Primer de tot nosaltres hem fet una superclasse per a personal, perque considerem que es millor per tal de evitar redundancia. A més que nosaltres ho hem entenem aixì. 
 
--Seguidament nosaltres pensem que tant **HABITACIO** i **QUIROFAN** son entitats febles perque depenen de la entitat **PLANTA**
+- Seguidament nosaltres pensem que tant **HABITACIO** i **QUIROFAN** son entitats febles perque depenen de la entitat **PLANTA**
 
--Després nosaltres hem considerat que **APARELL MEDIC** pot estar distribuit en molts quirofans
+- Després **APARELL MEDIC** guarda el tipus de aparells que te l'hospital per tan alla tinc una id per cada tipus aparell
 
+- A
 ![Imatge3](Imagenes/2.png)
 
 <br>
