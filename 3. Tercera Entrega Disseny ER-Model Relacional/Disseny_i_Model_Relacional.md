@@ -50,14 +50,6 @@ CREATE TABLE PLANTA (
 num_plantes SERIAL PRIMARY KEY UNIQUE 
 );
 ```
-Taula Medicament
-----------------
-```
-CREATE TABLE MEDICAMENT ( 
-id_medicament SERIAL PRIMARY KEY UNIQUE, 
-nom VARCHAR(25) NOT NULL 
-);
-```
 Taula Quirofan
 --------------
 ```
@@ -65,6 +57,14 @@ CREATE TABLE QUIROFAN (
 nom_quirofan CHAR(4) PRIMARY KEY UNIQUE, 
 num_plantes INT, 
 CONSTRAINT num_planta_fk FOREIGN KEY (num_plantes) REFERENCES PLANTA(num_plantes) 
+);
+```
+Taula Medicament
+----------------
+```
+CREATE TABLE MEDICAMENT ( 
+id_medicament SERIAL PRIMARY KEY UNIQUE, 
+nom VARCHAR(25) NOT NULL 
 );
 ```
 Taula Habitacio
@@ -130,7 +130,8 @@ Taula Personal_Infermeria
 ```
 CREATE TABLE PERSONAL_INFERMERIA( 
 id_infermeria SERIAL PRIMARY KEY UNIQUE, 
-estudis VARCHAR(255), especialitat VARCHAR(25) NOT NULL, 
+estudis VARCHAR(255), 
+especialitat VARCHAR(25) NOT NULL, 
 curriculum VARCHAR(255),
 id_personal INT, 
 num_plantes INT,
@@ -152,9 +153,9 @@ Taula Quirofan_Aparell_Medic
 ----------------------------
 ```
 CREATE TABLE QUIROFAN_APARELL_MEDIC (
-quantitat INT,
 nom_quirofan CHAR(4),
 id_aparell_medic INT,
+quantitat INT,
 CONSTRAINT aparell_medic_quirofan_fk FOREIGN KEY (nom_quirofan) REFERENCES QUIROFAN(nom_quirofan),
 CONSTRAINT quirofan_aparell_fk FOREIGN KEY (id_aparell_medic) REFERENCES APARELL_MEDIC (id_aparell_medic)
 );
@@ -174,8 +175,8 @@ Taula PacienT_ingressat
 ```
 CREATE TABLE PACIENT_INGRESSAT (
 id_ingressat SERIAL PRIMARY KEY UNIQUE,
-dia_ingres DATE,
-dia_sortida DATE,
+dia_ingres TIMESTAMP,
+dia_sortida TIMESTAMP,
 id_pacient INT,
 num_habitacio INT,
 CONSTRAINT pacient_pacient_ingressat_fk FOREIGN KEY (id_pacient) REFERENCES PACIENT (id_pacient),
