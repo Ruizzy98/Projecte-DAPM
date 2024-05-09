@@ -7,7 +7,6 @@ Justificació
 
 - Després **APARELL MEDIC** guarda el tipus de aparells que te l'hospital per tan alla tinc una id per cada tipus aparell
 
-- A
 ![Imatge3](Imagenes/2.png)
 
 <br>
