@@ -11,7 +11,7 @@
 ---
 **👨‍💻 Autors:** Alex Pica, Miguel Ibañez, Daniel Ruiz, Pau Miro 👨‍💻
 
-**📚 Asignatura:** M02-UF3 👨‍💻
+**📚 Asignatura:** M02-UF3 📚
 
 **🏫 Classe:** 1 ASIX 🏫
 ---
