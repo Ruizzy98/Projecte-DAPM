@@ -7,7 +7,7 @@ Justificació
 
 - Després **APARELL MEDIC** guarda el tipus de aparells que te l'hospital per tan alla tinc una id per cada tipus aparell
 
-- Per nosaltres les relacions entre **PACIENT** i **OPERACIO**, es de aquesta manera perque un pacient pot tenir moltes operacions, en canvi una operacio no pot tenir molts pacients.
+- Per nosaltres les relacions entre **PACIENT** i **OPERACIO**, es de aquesta manera perque un pacient pot tenir moltes operacions, en canvi una operacio només es per un pacient.
 - Pasa el mateix amb **PACIENT** i **VISITA**, ja que considerem que un pacient pot tenir moltes visites, i una vista te a un pacient.
 
 ![Imatge3](Imagenes/2.png)
