@@ -5,7 +5,7 @@ Justificació
 
 - Seguidament nosaltres pensem que tant **HABITACIO** i **QUIROFAN** son entitats febles perque depenen de la entitat **PLANTA**
 
-- Després **APARELL MEDIC** guarda el tipus de aparells que te l'hospital per tan alla tinc una id per cada tipus aparell
+- Des de la taula d'**APARELL_MEDIC** mantenim un registre exhaustiu de tots els tipus d'aparells mèdics presents a l'hospital. Utilitzant l'identificador d'aquesta taula, a la taula **quirofan_aparell_medic** podem gestionar l'assignació dels aparells a quiròfans específics. A més, tenim la capacitat d'especificar la quantitat de cada aparell disponible a cada **QUIROFAN**.
 
 - Per nosaltres les relacions entre **PACIENT** i **OPERACIO**, es de aquesta manera perque un pacient pot tenir moltes operacions, en canvi una operacio només es per un pacient.
 - Pasa el mateix amb **PACIENT** i **VISITA**, ja que considerem que un pacient pot tenir moltes visites, i una vista te a un pacient.
