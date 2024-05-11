@@ -4,7 +4,7 @@ Justificació
 - Primer de tot nosaltres hem fet una superclasse per a personal, perquè considerem que és millor per tal d'evitar redundància. A més que nosaltres ho entenem així.
 
 
-- Seguidament, nosaltres pensem que tant **HABITACIO** i **QUIROFAN** ón entitats febles perquè depenen de l'entitat **PLANTA**
+- Seguidament, nosaltres pensem que tant **HABITACIO** i **QUIROFAN** són entitats febles perquè depenen de l'entitat **PLANTA**
 
 - Des de la taula d'**APARELL_MEDIC** mantenim un registre exhaustiu de tots els tipus d'aparells mèdics presents a l'hospital. Utilitzant l'identificador d'aquesta taula, a la taula **QUIROFAN_APARELL_MEDIC** podem gestionar l'assignació dels aparells a quiròfans específics. A més, tenim la capacitat d'especificar la quantitat de cada aparell disponible a cada **QUIROFAN**.
 
