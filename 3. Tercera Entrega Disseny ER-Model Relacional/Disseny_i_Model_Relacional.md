@@ -10,7 +10,7 @@ Justificació
 
 - Per nosaltres les relacions entre **PACIENT** i **OPERACIO**, és d'aquesta manera perquè un pacient pot tenir moltes operacions, en canvi, una operació només és per un pacient.
 
-- Passa el mateix amb **PACIENT** i **VISITA**, ja que considerem que un pacient pot tenir moltes visites, i una vista té a un pacient.
+- Passa el mateix amb **PACIENT** i **VISITA**, ja que considerem que un pacient pot tenir moltes visites, i una vista és de un  únic pacient.
 
 ![Imatge3](Imagenes/2.png)
 
