@@ -1,7 +1,7 @@
 # <p align="center">  Dummy Data  </p>
 Faker
 -------------
-En aquest cas hem utilitzat el feaker
+En aquest cas hem utilitzat el faker
 
 Que es el faker?
 
