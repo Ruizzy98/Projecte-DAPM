@@ -12,4 +12,4 @@ Com l'hem utilitzat?
 -----
 Per començar vam fer el pip install al cmd
 
-![pip.jpg](fotos)
+![i1](fotos/pip.jpg)
