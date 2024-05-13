@@ -23,34 +23,34 @@ Seguidament al utilitzar un arxiu python cal posar aquests imports
 Creació d'Index
 ---------------
 Índex per a la taula RESERVA en la columna nom_quirofan:
-<br>
+```
 - CREATE INDEX index_reserva_nom_quirofan ON RESERVA (nom_quirofan);
-<br>
+```
 
 Índex per a la taula VISITA en la columna id_pacient:
-<br>
+```
 - CREATE INDEX index_visita_id_pacient ON VISITA (id_pacient); <br>
-<br>
+```
 
 Índex per a la taula VISITA en la columna id_medic:
-<br>
+```
 - CREATE INDEX index_visita_id_medic ON VISITA (id_medic); <br>
-<br>
+```
 
 Índex per a la taula OPERACIO en la columna id_pacient:
-<br>
+```
 - CREATE INDEX index_operacio_id_pacient ON OPERACIO (id_pacient); <br>
-<br>
+```
 
 Índex per a la taula OPERACIO en la columna id_medic:
-<br>
+```
 - CREATE INDEX index_operacio_id_medic ON OPERACIO (id_medic); <br>
-<br>
+```
 
 Índex per a la taula PACIENT_INGRESSAT en la columna num_habitacio:
-<br>
+```
 - CREATE INDEX index_pacient_ingressat_num_habitacio ON PACIENT_INGRESSAT (num_habitacio);
-
+```
 
 # Readme
 #### [1.Primera Entrega Planificació del projecte ](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/1.%20Primera%20Entrega%20Planificaci%C3%B3%20del%20projecte%20(BD%20%2B%20PRG))
