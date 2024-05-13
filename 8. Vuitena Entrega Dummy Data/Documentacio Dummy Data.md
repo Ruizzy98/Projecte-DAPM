@@ -16,4 +16,4 @@ Per començar vam fer el pip install al cmd
 
 Seguidament al utilitzar un arxiu python cal posar aquests imports
 
-![i2](fotos/import.jpg)
+![i2](fotos/imports.jpg)
