@@ -13,3 +13,7 @@ Com l'hem utilitzat?
 Per començar vam fer el pip install al cmd
 
 ![i1](fotos/pip.jpg)
+
+Seguidament al utilitzar un arxiu python cal posar aquests imports
+
+![i2](fotos/import.jpg)
