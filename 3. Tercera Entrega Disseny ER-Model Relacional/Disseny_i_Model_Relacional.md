@@ -1,4 +1,4 @@
-# <p align="center">  -ESQUEMA RELACIONAL </p>
+# <p align="center">  ESQUEMA RELACIONAL </p>
 Justificació
 ------------
 - Primer de tot nosaltres hem fet una superclasse per a personal, perquè considerem que és millor per tal d'evitar redundància. A més que nosaltres ho entenem així.
