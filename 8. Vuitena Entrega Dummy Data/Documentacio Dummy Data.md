@@ -26,6 +26,7 @@ Creació d'Index
 <br>
 - CREATE INDEX index_reserva_nom_quirofan ON RESERVA (nom_quirofan);
 <br>
+
 Índex per a la taula VISITA en la columna id_pacient:
 <br>
 - CREATE INDEX index_visita_id_pacient ON VISITA (id_pacient); <br>
