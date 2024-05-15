@@ -11,16 +11,16 @@ Això és útil quan necessites omplir una base de dades amb dades de prova o re
 
 Com l'hem utilitzat?
 -----
-Per començar vam fer el pip install al cmd
+Per començar, vam fer el pip install al cmd:
 
 ![i1](fotos/pip.jpg)
 
-Seguidament al utilitzar un arxiu python cal posar aquests imports
+Seguidament, en utilitzar un arxiu Python cal posar aquests imports:
 
 ![i2](fotos/imports.jpg)
 
 
-Creació d'Index
+Creació d'Índex
 ---------------
 Índex per a la taula RESERVA en la columna nom_quirofan:
 ```
