@@ -6,11 +6,11 @@ Creació de rols i grups
 -	Hauria de tenir accés complet a totes les taules i la capacitat de realitzar qualsevol operació en la base de dades, incloent-hi la creació, modificació i eliminació de taules i registres.
 -	Pot crear, modificar i eliminar usuaris i assignar-los rols i permisos.
 
-Crear un rol amb permisos de superUsuari
+Crear un rol amb permisos de super-Usuari
 ```
 CREATE ROLE admins WITH SUPERUSER LOGIN PASSWORD '1234hola';
 ```
-Donar permisos de accés complet a totes les taules:
+Donar permisos d'accés complet a totes les taules:
 ```
 GRANT ALL PRIVILEGES ON ALL TABLES IN SCHEMA public TO admins;
 ```
@@ -18,7 +18,7 @@ Donar accés complet a la base de dades:
 ```
 GRANT ALL PRIVILEGES ON DATABASE "HOSPIAL ESPERO QUE EL FINAL" TO admins;
 ```
-Donar permisos de creació de taules i roles:
+Donar permisos de creació de taules i rols:
 ```
 ALTER ROLE admins CREATEDB CREATEROLE;
 ```
@@ -34,12 +34,12 @@ Crear rols:
 ```
 CREATE ROLE administratius;
 ```
-Crear el usuari de administratius:
+Crear l'usuari d'administratius:
 ```
 CREATE USER rafa_pacheco WITH PASSWORD 'rafita1234';
 GRANT administratius TO rafa_pacheco;
 ```
-Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
+Primer li triem tots els permisos per tenir més seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic, habitacio, medicament, operacio, pacient, personal, personal_infermeria, personal_medic, personal_vari, planta, quirofan, reserva, visita, visita_medicament FROM administratius;
 ```
@@ -60,12 +60,12 @@ Crear el rol:
 ```
 CREATE ROLE personal_medic
 ```
-Creem el usuari i assignem el rol:
+Creem l'usuari i assignem el rol:
 ```
 CREATE USER anna_lopez WITH PASSWORD 'anna1234';
 GRANT personal_medic TO anna_lopez;
 ```
-Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
+Primer li triem tots els permisos per tenir més seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM personal_medic;
 ```
@@ -78,18 +78,18 @@ GRANT SELECT, UPDATE ON PACIENT, VISITA, OPERACIO, HABITACIO, PERSONAL_MEDIC, VI
 
 **INFERMERS** (Josep):
 -	Accés a les taules de PACIENT, OPERACIO, HABITACIO, PERSONAL_INFERMERIA.
--	Poden veure i actualitzar informació sobre pacients, assignació d'habitacions, assignació de personal d'infermeri i detalls de les operacions quirúrgiques.
+-	Poden veure i actualitzar informació sobre pacients, assignació d'habitacions, assignació de personal d'infermeria i detalls de les operacions quirúrgiques.
 -	No haurien de tenir permisos per a modificar informació administrativa general o detalls mèdics específics, com les taules de RESERVA o MEDICAMENT.
 Crear rol:
 ```
 CREATE ROLE infermers:
 ```
-Crear el usuari i assignar el rol:
+Crear l'usuari i assignar el rol:
 ```
 CREATE USER Josep WITH PASSWORD 'jsp';
 GRANT infermers TO Josep;
 ```
-Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
+Primer li triem tots els permisos per tenir més seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM infermers;
 ```
@@ -109,12 +109,12 @@ Crear rol:
 ```
 CREATE ROLE manteniment
 ```
-Crear el usuari i assignar el rol:
+Crear l'usuari i assignar el rol:
 ```
 CREATE USER monica_paredes WITH PASSWORD ‘monica1234’;
 GRANT manteniment TO monica_paredes;
 ```
-Primer li triem tots els permisos per tenir mes seguretat: *(Llista negre)* 
+Primer li triem tots els permisos per tenir més seguretat: *(Llista negre)* 
 ```
 REVOKE ALL PRIVILEGES ON aparell_medic , habitacio , medicament , operacio , pacient , personal , personal_infermeria , personal_medic , personal_vari , planta , quirofan , reserva , visita , visita_medicament FROM manteniment;
 ```
@@ -127,41 +127,31 @@ GRANT SELECT, UPDATE ON HABITACIO, PERSONAL_VARI TO manteniment;
 
 Data Masking
 ------------
-Instalem pgxclient 
-
-<br>
+Instal·lem pgxclient:
 
 ![Imatge1](Imatges/DataMasking.jpg)
 
 <br>
 
-Aqui instalem l'anonymizer
-
-<br>
+Aqui instal·lem l'anonymizer:
 
 ![Imatge2](Imatges/DataMasking1.jpg)
 
 <br>
 
-Creem la extensió ANNON i li posem les seves llibreries
-
-<br>
+Creem la extensió ANNON i li posem les seves llibreries:
 
 ![Imatge3](Imatges/DataMasking2.jpg)
 
 <br>
 
-Reiniciem el servei 
-
-<br>
+Reiniciem el servei:
 
 ![Imatge4](Imatges/DataMasking3.jpg)
 
 <br>
 
-Xifrem la columna DNI
-
-<br>
+Xifrem la columna DNI:
 
 ![Imatge5](Imatges/DataMasking4.jpg)
 
