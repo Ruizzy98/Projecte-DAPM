@@ -11,13 +11,9 @@ Instal·lar el controlador odbc per postgres que acabin de descarregar. <br>
 
 Crear la connexió PostgreSQL Unicode(x64)
 
-<br>
-
 ![Imatge2](Imatges/Imagen2.png)
 
 Cal afegir la connexió de postgres:
-
-<br>
 
 ![Imatge2](Imatges/Imagen2.png)
 
