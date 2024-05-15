@@ -5,21 +5,37 @@ Primer de tot haurem d'anar a aquesta web: https://www.postgresql.org/ftp/odbc/v
 
 Instal·lar el controlador odbc per postgres que acabin de descarregar. <br>
 <br>
+
 ![Imatge1](Imatges/Imagen1.png)
+
 <br>
+
 Crear la connexió PostgreSQL Unicode(x64)
+
 <br>
+
 ![Imatge2](Imatges/Imagen2.png)
-CAfegir la connexió de postgres:
+
+Cal afegir la connexió de postgres:
+
 <br>
+
 ![Imatge2](Imatges/Imagen2.png)
+
 <br>
+
 Al Power Bi anar a “Obtener datos -> Otras”:
+
 ![Imatge3](Imatges/Imagen3.png)
+
 <br>
+
 Seleccionar la connexió creada anteriorment:
+
 ![Imatge4](Imatges/Imagen4.png)
+
 Afegir les credencials:
+
 ![Imatge5](Imatges/Imagen5.png)
 
 
