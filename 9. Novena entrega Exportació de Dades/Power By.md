@@ -5,4 +5,4 @@ Primer de tot haurem d'anar a aquesta web: https://www.postgresql.org/ftp/odbc/v
 
 Instal·lar el controlador odbc per postgres que acabin de descarregar. <br>
 <br>
-[Imatge1](Imatges/Imagen1.png)
+![Imatge1](Imatges/Imagen1.png)
