@@ -4,7 +4,7 @@ Documentacio per exportar les dades
 Primer de tot haurem d'anar a aquesta web: https://www.postgresql.org/ftp/odbc/versions.old/msi/ i descarregar la versió corresponent  al nostre postgres, en el meu cas descarreguem  el postgresql 15, 
 
 Instal·lar el controlador odbc per postgres que acabin de descarregar. <br>
-<br>
+
 
 ![Imatge1](Imatges/Imagen1.png)
 <br>
@@ -17,13 +17,9 @@ Cal afegir la connexió de postgres:
 
 ![Imatge2](Imatges/Imagen2.png)
 
-<br>
-
 Al Power Bi anar a “Obtener datos -> Otras”:
 
 ![Imatge3](Imatges/Imagen3.png)
-
-<br>
 
 Seleccionar la connexió creada anteriorment:
 
