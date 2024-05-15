@@ -1,4 +1,6 @@
-Això fa un llistat dels pacients que hem inserit
+Bloc de manteniment
+-------------------
+Això fa un llistat dels pacients que hem inserit:
 ```
 CREATE OR REPLACE FUNCTION deus(
     num_plantes_input INT
@@ -20,13 +22,13 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
-Per confirmar que tot està correcte, haurem de fer la següent sentencia:
+Per confirmar que tot està correcte, haurem de fer la següent sentència:
 ```
 SELECT * FROM deus(4);
 ```
 ![imatge1](Imatges/image.png)<br>
 
-Creem una funció per la consulta
+Creem una funció per la consulta:
 ```
 CREATE OR REPLACE FUNCTION data_consulta(
     fecha_consulta DATE
@@ -56,7 +58,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
-Per confirmar que tot està correcte, haurem de fer la següent sentencia:
+Per confirmar que tot està correcte, haurem de fer la següent sentència:
 ```
 SELECT * FROM data_consulta('2024-04-21');
 ````
