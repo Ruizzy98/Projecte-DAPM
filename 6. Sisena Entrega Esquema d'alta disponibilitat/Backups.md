@@ -74,7 +74,7 @@ Ara haurem de tornar a modificar el script del principi, per tal de fer les  cò
 Quan ja hem modificat el script, ho executem:
 ![imatge9](Imatges/OneDrive2.jpg)<br>
 <br>
-Per últim comprovem que en el OneDrive tenim les còpies fetes en local.
+Per últim, comprovem que en el OneDrive tenim les còpies fetes en local.
 ![imatge10](Imatges/OneDrive.jpg)<br>
 
 
