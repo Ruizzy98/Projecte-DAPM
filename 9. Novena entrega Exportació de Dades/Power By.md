@@ -29,6 +29,60 @@ Afegir les credencials:
 
 ![Imatge5](Imatges/Imagen5.png)
 
+Dashboard
+---------
+Una vegadad ja esta exportada les dades, haurem de crear els grafics, per fer-ho hem anant fent les següents consultes:
+
+```
+WITH DiagnosticosPorMes AS (
+    SELECT 
+        TO_CHAR(data_hora, 'Month') AS Mes,
+        diagnostic AS Enfermedad,
+        COUNT(*) AS Frecuencia
+    FROM 
+        VISITA
+    WHERE
+        EXTRACT(YEAR FROM data_hora) = 2023
+    GROUP BY 
+        TO_CHAR(data_hora, 'Month'), 
+        diagnostic
+),
+MaxFrecuenciaPorMes AS (
+    SELECT
+        Mes,
+        MAX(Frecuencia) AS MaxFrecuencia
+    FROM
+        DiagnosticosPorMes
+    GROUP BY
+        Mes
+)
+SELECT 
+    d.Mes,
+    d.Enfermedad,
+    d.Frecuencia
+FROM 
+    DiagnosticosPorMes d
+JOIN 
+    MaxFrecuenciaPorMes m
+ON 
+    d.Mes = m.Mes AND d.Frecuencia = m.MaxFrecuencia
+ORDER BY 
+    CASE
+        WHEN d.Mes = 'January' THEN 1
+        WHEN d.Mes = 'February' THEN 2
+        WHEN d.Mes = 'March' THEN 3
+        WHEN d.Mes = 'April' THEN 4
+        WHEN d.Mes = 'May' THEN 5
+        WHEN d.Mes = 'June' THEN 6
+        WHEN d.Mes = 'July' THEN 7
+        WHEN d.Mes = 'August' THEN 8
+        WHEN d.Mes = 'September' THEN 9
+        WHEN d.Mes = 'October' THEN 10
+        WHEN d.Mes = 'November' THEN 11
+        ELSE 12
+    END;
+```
+![Imatge1](Imatges/1.png)
 
 # Readme
 #### [1.Primera Entrega Planificació del projecte ](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/1.%20Primera%20Entrega%20Planificaci%C3%B3%20del%20projecte%20(BD%20%2B%20PRG))
