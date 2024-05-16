@@ -82,7 +82,70 @@ ORDER BY
         ELSE 12
     END;
 ```
-![Imatge1](Imatges/1.png)
+![Dashboard1](Imatges/Dashboard2.png)
+
+```
+WITH RankedEnfermeros AS (
+    SELECT 
+        EXTRACT(MONTH FROM v.data_hora) AS month_number,
+        CASE 
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 1 THEN 'Enero'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 2 THEN 'Febrero'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 3 THEN 'Marzo'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 4 THEN 'Abril'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 5 THEN 'Mayo'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 6 THEN 'Junio'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 7 THEN 'Julio'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 8 THEN 'Agosto'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 9 THEN 'Septiembre'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 10 THEN 'Octubre'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 11 THEN 'Noviembre'
+            WHEN EXTRACT(MONTH FROM v.data_hora) = 12 THEN 'Diciembre'
+        END AS month_name,
+        pi.id_personal AS id_enfermero,
+        p.nom AS nombre_enfermero,
+        COUNT(v.id_visita) AS total_visitas,
+        ROW_NUMBER() OVER(PARTITION BY EXTRACT(MONTH FROM v.data_hora) ORDER BY COUNT(v.id_visita) DESC) AS rank
+    FROM 
+        VISITA v
+    INNER JOIN 
+        PERSONAL_INFERMERIA pi ON v.id_medic = pi.id_medic
+    INNER JOIN 
+        PERSONAL p ON pi.id_personal = p.id_personal
+    WHERE 
+        EXTRACT(YEAR FROM v.data_hora) = 2024
+    GROUP BY 
+        month_number, month_name, pi.id_personal, p.nom
+)
+SELECT 
+    month_name AS month,
+    id_enfermero,
+    nombre_enfermero,
+    total_visitas
+FROM 
+    RankedEnfermeros
+WHERE 
+    rank = 1;
+```
+![Dashboard2](Imatges/Dashboard1.png)
+
+```
+SELECT 
+    COALESCE(pm.especialitat, 'Altres') AS area,
+    COUNT(v.id_visita) AS total_visitas
+FROM 
+    VISITA v
+LEFT JOIN 
+    PERSONAL_MEDIC pm ON v.id_medic = pm.id_medic
+WHERE 
+    DATE(v.data_hora) = '2024-05-13'
+GROUP BY 
+    pm.especialitat
+ORDER BY 
+    total_visitas DESC;
+```
+![Dashboard3](Imatges/Dashboard3.png)
+
 
 # Readme
 #### [1.Primera Entrega Planificació del projecte ](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/1.%20Primera%20Entrega%20Planificaci%C3%B3%20del%20projecte%20(BD%20%2B%20PRG))
