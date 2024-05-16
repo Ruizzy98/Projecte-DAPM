@@ -31,8 +31,8 @@ Afegir les credencials:
 
 Dashboard
 ---------
-Una vegadad ja esta exportada les dades, haurem de crear els grafics, per fer-ho hem anant fent les següents consultes.
-El que fa aquesta primera taula és mostrar les enfermetats més comuns de cada mes:
+Una vegada ja està exportada les dades, haurem de crear els gràfics, per fer-ho hem anat fent les següents consultes.
+El que fa aquest primer gràfic és mostrar les enfermetats més comunes de cada mes:
 ```
 WITH DiagnosticosPorMes AS (
     SELECT 
@@ -83,8 +83,10 @@ ORDER BY
     END;
 ```
 <br>
+
 ![Dashboard1](Imatges/Dashboard2.png)
-El que fa aquesta segona taula és mostrar els infermers amb més visites de cada mes del 2024.
+
+El que fa aquest segon gràfic és mostrar els infermers amb més visites de cada mes del 2024.
 
 ```
 WITH RankedEnfermeros AS (
