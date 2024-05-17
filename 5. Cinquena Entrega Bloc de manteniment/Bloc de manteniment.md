@@ -1,4 +1,6 @@
-Això fa un llistat dels pacients que hem inserit
+Bloc de manteniment
+-------------------
+Això fa un llistat dels pacients que hem inserit:
 ```
 CREATE OR REPLACE FUNCTION deus(
     num_plantes_input INT
@@ -20,13 +22,13 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
-Per confirmar que tot està correcte, haurem de fer la següent sentencia:
+Per confirmar que tot està correcte, haurem de fer la següent sentència:
 ```
 SELECT * FROM deus(4);
 ```
 ![imatge1](Imatges/image.png)<br>
 
-Creem una funció per la consulta
+Creem una funció per la consulta:
 ```
 CREATE OR REPLACE FUNCTION data_consulta(
     fecha_consulta DATE
@@ -56,7 +58,7 @@ BEGIN
 END;
 $$ LANGUAGE plpgsql;
 ```
-Per confirmar que tot està correcte, haurem de fer la següent sentencia:
+Per confirmar que tot està correcte, haurem de fer la següent sentència:
 ```
 SELECT * FROM data_consulta('2024-04-21');
 ````
@@ -70,3 +72,5 @@ SELECT * FROM data_consulta('2024-04-21');
 #### [5. Cinquena Entrega Esquema de seguretat](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/5.%20Cinquena%20Entrega%20Bloc%20de%20manteniment)
 #### [6. Sisena Entrega Esquema de seguretat](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/6.%20Sisena%20Entrega%20Esquema%20d'alta%20disponibilitat)
 #### [7. Setena Entrega Bloc de consultes](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/7.%20Setena%20Entrega%20Bloc%20de%20consultes)
+#### [8. Vuitena Entrega Dummy Data](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/8.%20Vuitena%20Entrega%20Dummy%20Data)
+#### [9. Novena entrega Exportació de Dades](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/9.%20Novena%20entrega%20Exportaci%C3%B3%20de%20Dades)
