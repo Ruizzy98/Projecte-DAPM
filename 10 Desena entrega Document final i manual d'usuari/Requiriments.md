@@ -8,13 +8,14 @@ Llibreries utilitzades
 Import datetime
 ```
 El mòdul datetime a Python dona classes per a manipular dates i hores . En importar aquest mòdul, ens dona accés a diverses funcions i classes que ens permeten treballar amb dates i temps d'una manera mes facil.
+<br> </br>
 
 ```
 Import Random
 ```
 El mòdul random en Python proporciona una varietat de funcions per a generar números aleatoris i realitzar operacions relacionades aletories. És especialment útil per a tasques que requereixen generació de números pseudoaleatoris, selecció aleatòria d'elements, barrejat de dades, i molt més.
 
-
+<br> </br>
 
 ```
 Import faker
