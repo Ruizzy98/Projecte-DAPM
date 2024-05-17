@@ -25,4 +25,5 @@
 #### [7. Setena Entrega Bloc de consultes](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/7.%20Setena%20Entrega%20Bloc%20de%20consultes)
 #### [8. Vuitena Entrega Dummy Data](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/8.%20Vuitena%20Entrega%20Dummy%20Data)
 #### [9. Novena entrega Exportació de Dades](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/9.%20Novena%20entrega%20Exportaci%C3%B3%20de%20Dades)
-
+#### [10. Desena entrega Document final i maual de usuari](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/10%20Desena%20entrega%20Document%20final%20i%20manual%20d'usuari)
+## [hola] (https://www.directoalpaladar.com/recetario/31-recetas-de-pizza-una-pizza-para-cada-dia-del-mes)
