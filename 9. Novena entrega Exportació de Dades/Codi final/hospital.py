@@ -3,7 +3,7 @@ import psycopg2
 from psycopg2 import Error
 from cryptography.fernet import Fernet
 from lxml import etree
-from Duuuumy import *
+from Duuuumyy import *
 
 
 def carregar_clau():

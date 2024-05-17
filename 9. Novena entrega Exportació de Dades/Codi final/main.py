@@ -1,3 +1,3 @@
 from hospital import *
-from Duuuumy import *
+from Duuuumyy import *
 mostrar_menu()

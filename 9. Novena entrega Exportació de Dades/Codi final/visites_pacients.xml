@@ -1,0 +1,30 @@
+<hospital>
+  <visita>
+    <id_visita>5</id_visita>
+    <Nom>María</Nom>
+    <Cognom>Ruiz</Cognom>
+    <Data>2024-04-18T08:30:00</Data>
+    <Metge>Ana Sánchez</Metge>
+  </visita>
+  <visita>
+    <id_visita>1</id_visita>
+    <Nom>Pablo</Nom>
+    <Cognom>González</Cognom>
+    <Data>2024-04-18T10:00:00</Data>
+    <Metge>Marc Gómez</Metge>
+  </visita>
+  <visita>
+    <id_visita>2</id_visita>
+    <Nom>Clara</Nom>
+    <Cognom>Díaz</Cognom>
+    <Data>2024-04-19T14:30:00</Data>
+    <Metge>Marc Gómez</Metge>
+  </visita>
+  <visita>
+    <id_visita>3</id_visita>
+    <Nom>María</Nom>
+    <Cognom>Ruiz</Cognom>
+    <Data>2024-04-20T09:15:00</Data>
+    <Metge>Laura Martínez</Metge>
+  </visita>
+</hospital>
