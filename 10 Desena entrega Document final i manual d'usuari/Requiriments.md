@@ -14,24 +14,25 @@ El mòdul datetime a Python dona classes per a manipular dates i hores . En impo
 Import Random
 ```
 El mòdul random en Python proporciona una varietat de funcions per a generar números aleatoris i realitzar operacions relacionades aletories. És especialment útil per a tasques que requereixen generació de números pseudoaleatoris, selecció aleatòria d'elements, barrejat de dades, i molt més.
-
 <br> </br>
 
 ```
 Import faker
 ```
-
 El mòdul faker en Python és una biblioteca que permet generar dades falses . És  útil per a crear dades de prova realistes per a una varietat d'aplicacions, des de noms i direccions fins a dades específiques com a nombres de targetes de crèdit, dates i molts altres tipus d'informació.
+<br> </br>
 
 ```
 Import psycopg2
 ```
 Psycopg2 és un adaptador de bases de dades que s'utilitza amb Python que permet interactuar amb bases de dades PostgreSQL. El seu propòsit principal és facilitar la connexió a la base de dades, executar consultes SQL i manejar els resultats de les consultes.
+<br> </br>
 
 ```
 Import etree
 ```
 ElementTree és un mòdul en Python que implementa una API simple i eficient per a analitzar i crear dades XML.
+<br> </br>
 
 ```
 Import Fernet
