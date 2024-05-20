@@ -35,8 +35,8 @@ Aquest menú és totes les funcions i coses que pot mirar i executar l'usuari te
 
 ![imatg6](Imatges/Imagen7.png)
  
-Aquí podem obtenir, aconseguir i crear dades dels pacients, quiròfans, visites i tot el treball que guardem dins de la base de dades.
-1.1	Obtenir dependència infermeria: 
+Aquí podem obtenir, aconseguir i crear dades dels pacients, quiròfans, visites i tot el treball que guardem dins de la base de dades. <br>
+1.1	Obtenir dependència infermeria: <br>
 Aquí podem posar el número del ID de la infermera i ens dirà si depèn d'una planta o d'un metge. Aquí hi ha dos exemples:
 En aquest cas depèn d'un metge. 
 
@@ -82,7 +82,8 @@ Aquí posem la informació del nou usuari com el nom i el cognom i ja crearíem 
 ![imatg15](Imatges/Imagen16.png)
 
 1.0 Tornar al menú principal:
-Serveix per torna el menú per si ens hem equivocat o per si després volem sortir del programa.
+Serveix per torna el menú per si ens hem equivocat o per si després volem sortir del programa. <br>
+
 2: Consultes i informes:
 Dins d'aquí podem aconseguir rankings i consultes o informes que hi ha dins del nostre hospital. Exemple: 
 
@@ -116,10 +117,14 @@ Aquí és el mateix ranking que a dalt, però amb les malalties funciona igual e
 2.0. Tornar al menú principal:
 Serveix per torna el menú per si ens hem equivocat o per si després volem sortir del programa.
 
+<br>
+
 3. Exportació de dades:
 Aquí el que fem és posar dues dades una data d'inici i una data de fi i ens agafa tota la informació de les visites durant el rang de dies que hem posat i posem la ubicació on volem guarda el fitxer. Exemple:
 
 ![imatg23](Imatges/Imagen24.png)
+
+<br>
 
 4. Dummy Data:
 Aquí podem crear dades "Fake" dins la base de dades per fer proves i per comprovar errors o manteniment.
@@ -128,7 +133,9 @@ Aquí podem crear dades "Fake" dins la base de dades per fer proves i per compro
 
 4.1. Generar les dades:
 Aquí és on generem les dades "Fake" per fer les proves. Exemple: 
- 
+
+![imatg24](Imatges/Imagen25.png)
+
 4.2. Eliminar dades:
 Aquí podem esborrar totes les dades creades anteriorment per si ja no volem fer més proves o perquè no molestin. Exemple: 
 
