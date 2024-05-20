@@ -1,4 +1,4 @@
-<p align="center"><img src="https://i.imgur.com/XXXXXXXXX.png" alt="Projecte Modular M02-UF3"></p>
+<p align="center"><img alt="Projecte Modular M02-UF3"></p>
 
 ---
 
