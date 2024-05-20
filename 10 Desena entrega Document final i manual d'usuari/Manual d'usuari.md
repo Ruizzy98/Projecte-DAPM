@@ -122,14 +122,14 @@ Serveix per torna el menú per si ens hem equivocat o per si després volem sort
 3. Exportació de dades:
 Aquí el que fem és posar dues dades una data d'inici i una data de fi i ens agafa tota la informació de les visites durant el rang de dies que hem posat i posem la ubicació on volem guarda el fitxer. Exemple:
 
-![imatg23](Imatges/Imagen24.png)
+![imatg23](Imatges/Imagen23.png)
 
 <br>
 
 4. Dummy Data:
 Aquí podem crear dades "Fake" dins la base de dades per fer proves i per comprovar errors o manteniment.
 
-![imatg24](Imatges/Imagen25.png)
+![imatg24](Imatges/Imagen24.png)
 
 4.1. Generar les dades:
 Aquí és on generem les dades "Fake" per fer les proves. Exemple: 
