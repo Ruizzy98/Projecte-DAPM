@@ -144,6 +144,3 @@ Aquí podem esborrar totes les dades creades anteriorment per si ja no volem fer
 4.0. Tornar al menú principal:
 Serveix per torna el menú per si ens em equivocat o per si després volem sortir del programa. 
 0.	Sortir: Serveix per canviar d’usuari o sortir de l’aplicació.
-4.0. Tornar al menú principal:
-Serveix per torna el menú per si ens hem equivocat o per si després volem sortir del programa.
-0. Sortir: Serveix per canviar d'usuari o sortir de l'aplicació.
