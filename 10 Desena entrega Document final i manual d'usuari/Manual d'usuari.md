@@ -4,7 +4,7 @@ Manual d'usuari
 Per començar tenim el primer fitxer que utilitzarem durant tot el programa que es el main.py que el que fa es tenir en tot moment un menú que el que fa es seleccionar per números el menú i que funcioni un programa o funció amb el que em seleccionat.
 De primeres tenim que executar el menú i de primer ens surt aquest menú.
 
-![imatge](Imatges/image)
+![imatge](Imatges/imagen1.png)
 
 El que fa es iniciar sessió al programa amb codificació i depèn del usuari que iniciem sessió tindrà els seus rols i permisos.
 1.	Iniciar sessió: el que fa aquesta funció es el següent.
