@@ -5,7 +5,7 @@ De primeres hem d'executar el menú i de primer ens surt aquest menú.
 
 ![imatge](Imatges/Imagen1.png)
 
-El que fa és iniciar sessió al programa amb codificació i depèn de l'usuari que iniciem sessió tindrà els seus rols i permisos.
+El que fa és iniciar sessió al programa amb codificació i depèn de l'usuari que iniciem sessió tindrà els seus rols i permisos. <br>
 1	Iniciar sessió: el que fa aquesta funció és el següent.
 
 ![imatge1](Imatges/Imagen2.png)
@@ -119,14 +119,14 @@ Serveix per torna el menú per si ens hem equivocat o per si després volem sort
 
 <br>
 
-3 Exportació de dades:
+3 Exportació de dades: <br>
 Aquí el que fem és posar dues dades una data d'inici i una data de fi i ens agafa tota la informació de les visites durant el rang de dies que hem posat i posem la ubicació on volem guarda el fitxer. Exemple:
 
 ![imatg23](Imatges/Imagen23.png)
 
 <br>
 
-4 Dummy Data:
+4 Dummy Data: <br>
 Aquí podem crear dades "Fake" dins la base de dades per fer proves i per comprovar errors o manteniment.
 
 ![imatg24](Imatges/Imagen24.png)
