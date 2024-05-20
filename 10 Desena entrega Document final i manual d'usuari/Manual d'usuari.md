@@ -6,7 +6,7 @@ De primeres hem d'executar el menú i de primer ens surt aquest menú.
 ![imatge](Imatges/Imagen1.png)
 
 El que fa és iniciar sessió al programa amb codificació i depèn de l'usuari que iniciem sessió tindrà els seus rols i permisos.
-  1.	Iniciar sessió: el que fa aquesta funció és el següent.
+1.	Iniciar sessió: el que fa aquesta funció és el següent.
 
 ![imatge1](Imatges/Imagen2.png)
 
