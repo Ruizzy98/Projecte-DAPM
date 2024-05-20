@@ -21,8 +21,7 @@ Si és tot correcte veurem el menú del programa si no és el correcte sortirà 
 
 El programa el que farà és avisar que hem posat malament l'usuari o la contrasenya malament i ens donarà l'opció de torna a iniciar sessió. 
 
-  0.	Sortir: el que fa la següent funció és sortir de l'aplicació aquesta funció sortirà en tot el menú, ja que ens interessa sortir en qualsevol moment del   
-     programa.
+  0.	Sortir: el que fa la següent funció és sortir de l'aplicació aquesta funció sortirà en tot el menú, ja que ens interessa sortir en qualsevol moment del programa.
 
 ![imatg4](Imatges/Imagen5.png)
 
