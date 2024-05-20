@@ -68,49 +68,75 @@ Dins d’aquí podem veure les visites del pacient, les vegades que ha estat ing
 
 1.6	Informació equip de tots els quiròfans:
 Aquí podem aconseguir tots els aparells que hi ha dins del quiròfan i la quantitat. Exemple:
- 
+
+![imatg13](Imatges/Imagen14.png)
+
 1.7	Crear un nou usuari (metge, infermer/a o personal vari):
 Aquí posem la informació del nou usuari com el DNI i la contrasenya i posem la especialitat del nou usuari i ja tindríem un nou usuari. Exemple:
- 
- 
+
+![imatg14](Imatges/Imagen15.png)
+
 1.8	Crear un nou pacient:
 Aquí posem la informació del nou usuari com el nom i el cognom i ja crearíem el nou pacient. Exemple:
- 
+
+![imatg15](Imatges/Imagen16.png)
+
 1.0	Tornar al menú principal:
 Serveix per torna el menú per si ens em equivocat o per si després volem sortir del programa. 
 2.	Consultes i informes:
 Dins d’aquí podem aconseguir rankings i consultes o informes que hi ha dins del nostre hospital. Exemple:
- 
+
+![imatg16](Imatges/Imagen17.png)
+
 2.1. Obtenir informació d'una planta:
 Aquí posem el numero de la planta i ens diu l’informació del numero d’habitacions i quiròfans que hi ha i quant personal d’infermeria hi ha en aquesta planta. Exemple:
-   
+
+![imatg17](Imatges/Imagen18.png)
  
 2.2. Informe del personal de l'hospital:
 Aquí ens diu els noms, DNI i el tipus de feina que té el personal de l’hospital. Exemple:
- 
+
+![imatg18](Imatges/Imagen19.png)
+
 2.3. Informe de les visites:
 Aquí posem la data de la visita i ens diu la hora, el nom del metge, el nom del pacient, el diagnòstic que ha receptat el metge i el medicament. Exemple:
- 
+
+![imatg19](Imatges/Imagen20.png)
+
 2.4. Ranking metges:
 Aquí surten el ranking dels metges amb mes visites de tot l’hospital. Exemple:
- 
+
+![imatg20](Imatges/Imagen21.png)
+
 2.5. Ranking malalties:
 Aquí es el mateix ranking que a dalt però amb les malalties funciona igual el ranking. Exemple:
- 
+
+![imatg21](Imatges/Imagen22.png)
+
 2.0. Tornar al menú principal:
-Serveix per torna el menú per si ens em equivocat o per si després volem sortir del programa. 
+Serveix per torna el menú per si ens em equivocat o per si després volem sortir del programa.
+
+![imatg22](Imatges/Imagen23.png)
+
 3. Exportació de dades:
 Aquí el que fem es posar dues dades una data d’inici i una data de fi i ens agafa tota la informació de les visites durant el rang de dies que em posat i posem l’ubicació on volem guarda el fitxer. Exemple:
- 
+
+![imatg23](Imatges/Imagen24.png)
+
 4.	Dummy Data:
 Aquí podem crear dades “Fake” dins la base de dades per fer probes i per comprovar errors o manteniment.
- 
+
+![imatg24](Imatges/Imagen25.png)
+
 4.1.	Generar les dades:
 Aquí es on generem les dades “Fake” per fer les probes. Exemple:
+
+![imatg25](Imatges/Imagen25.png)
 
 4.2.	Eliminar dades:
 Aquí podem borrar totes les dades creades anteriorment per si ja no volem fer més probes o perquè no molestin. Exemple:
 
+![imatg26](Imatges/Imagen26.png)
 
 4.0. Tornar al menú principal:
 Serveix per torna el menú per si ens em equivocat o per si després volem sortir del programa. 
