@@ -8,42 +8,64 @@ De primeres tenim que executar el menú i de primer ens surt aquest menú.
 
 El que fa es iniciar sessió al programa amb codificació i depèn del usuari que iniciem sessió tindrà els seus rols i permisos.
 1.	Iniciar sessió: el que fa aquesta funció es el següent.
- 
+
+![imatge1](Imatges/Imagen2.png)
+
 Et pregunta el usuari per iniciar sessió.
- 
+
+![imatge2](Imatges/Imagen3.png)
+
 Pregunta després la contrasenya del usuari al que volem accedir.
 Si es tot correcte veurem el menú del programa si no es el correcte sortirà el següent missatge.
- 
+
+![imatg3](Imatges/Imagen4.png)
+
 El programa el que farà es avisar que em posat malament el usuari o la contrasenya malament i ens donarà la opció de torna a iniciar sessió.
 0.	Sortir: el que fa la següent funció es sortir de la aplicació aquesta funció sortirà en tot el menú ja que ens interessa sortir en qualsevol moment del programa.
- 
+
+![imatg4](Imatges/Imagen5.png)
+
 El missatge que sortirà es que confirma que surt del programa.
 Confirmant que em iniciat sessió amb l’usuari i contrasenya correcte ens sortirà aquest menú.
+
+![imatg5](Imatges/Imagen6.png)
  
 Aquest menú es totes les funcions i coses que pot mirar i executar l’usuari tenint en compte els seus permisos i rols que te cada usuari. Ara explicarem que fa tots els menús.
 1.	Manteniments
- 
+
+![imatg6](Imatges/Imagen7.png)
+
 Aquí podem obtenir, aconseguir i crear dades dels pacients, quiròfans, visites i tot el treball que guardem dins de la base de dades.
 1.1	Obtenir dependència infermeria: 
 Aquí podem posar el numero del id de la infermera i ens dirà si depèn de una planta o d’un metge. Aquí hi ha dos exemples:
 En aquest cas depèn d’un metge.
  
- 
+![imatg7](Imatges/Imagen8.png)
+ 
 Aquí podem veure que depèn d’una planta.
+
+![imatg8](Imatges/Imagen9.png)
  
 1.2	Informació del quiròfan:
 Aquí podem veure el dia, el pacient que s’operarà, en quin quiròfan i quins metges i infermeres estaran fent l’operació. Un exemple:
- 
+
+![imatg9](Imatges/Imagen10.png)
+
 1.3	Informació de les visites:
 Aquí podrem accedir a l’informació de les visites que hi ha en aquell dia, com per exemple hora, nom del metge i nom del pacient. Exemple:
- 
+
+![imatg10](Imatges/Imagen11.png)
+
 1.4	Informació reserves per habitació:
 Dins podrem troba la informació dels pacients que estan ingressats o que han estat ingressats i el dia de sortida. Exemple:
  
- 
+![imatg11](Imatges/Imagen12.png)
+ 
 1.5	Informació del pacient:
 Dins d’aquí podem veure les visites del pacient, les vegades que ha estat ingressat, els cops que ha estat operat, el dia i la hora de les visites, el nom del pacient, el diagnòstic que li ha donat el metge i els medicaments receptats. Exemple:  
- 
+
+![imatg12](Imatges/Imagen13.png)
+
 1.6	Informació equip de tots els quiròfans:
 Aquí podem aconseguir tots els aparells que hi ha dins del quiròfan i la quantitat. Exemple:
  
