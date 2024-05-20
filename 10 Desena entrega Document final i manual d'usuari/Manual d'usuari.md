@@ -6,14 +6,29 @@ De primeres hem d'executar el menú i de primer ens surt aquest menú.
 ![imatge](Imatges/Imagen1.png)
 
 El que fa és iniciar sessió al programa amb codificació i depèn de l'usuari que iniciem sessió tindrà els seus rols i permisos.
-  1.	Iniciar sessió: el que fa aquesta funció és el següent. 
-Et pregunta l'usuari per iniciar sessió. 
+  1.	Iniciar sessió: el que fa aquesta funció és el següent.
+
+![imatge1](Imatges/Imagen2.png)
+
+Et pregunta l'usuari per iniciar sessió.
+
+![imatge2](Imatges/Imagen3.png)
+
 Pregunta després la contrasenya de l'usuari al qual volem accedir.
-Si és tot correcte veurem el menú del programa si no és el correcte sortirà el següent missatge. 
+Si és tot correcte veurem el menú del programa si no és el correcte sortirà el següent missatge.
+
+![imatg3](Imatges/Imagen4.png)
+
 El programa el que farà és avisar que hem posat malament l'usuari o la contrasenya malament i ens donarà l'opció de torna a iniciar sessió.
-0.	Sortir: el que fa la següent funció és sortir de l'aplicació aquesta funció sortirà en tot el menú, ja que ens interessa sortir en qualsevol moment del programa. 
+  0.	Sortir: el que fa la següent funció és sortir de l'aplicació aquesta funció sortirà en tot el menú, ja que ens interessa sortir en qualsevol moment del programa.
+
+![imatg4](Imatges/Imagen5.png)
+
 El missatge que sortirà és que confirma que surt del programa.
-Confirmant que hem iniciat sessió amb l'usuari i contrasenya correcte ens sortirà aquest menú. 
+Confirmant que hem iniciat sessió amb l'usuari i contrasenya correcte ens sortirà aquest menú.
+
+![imatg5](Imatges/Imagen6.png)
+
 Aquest menú és totes les funcions i coses que pot mirar i executar l'usuari tenint en compte els seus permisos i rols que té cada usuari. Ara explicarem que fa tots els menús.
 1.	Manteniments
  
