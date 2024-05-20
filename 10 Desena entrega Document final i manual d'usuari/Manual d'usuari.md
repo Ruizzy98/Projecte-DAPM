@@ -30,8 +30,8 @@ Confirmant que hem iniciat sessió amb l'usuari i contrasenya correcte ens sorti
 
 ![imatg5](Imatges/Imagen6.png)
 
-Aquest menú és totes les funcions i coses que pot mirar i executar l'usuari tenint en compte els seus permisos i rols que té cada usuari. Ara explicarem que fa tots els menús.
-  1.	Manteniments
+Aquest menú és totes les funcions i coses que pot mirar i executar l'usuari tenint en compte els seus permisos i rols que té cada usuari. Ara explicarem que fa tots els menús. <br>
+1	Manteniments
 
 ![imatg6](Imatges/Imagen7.png)
  
