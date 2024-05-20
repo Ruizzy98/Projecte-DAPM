@@ -116,8 +116,6 @@ Aquí és el mateix ranking que a dalt, però amb les malalties funciona igual e
 2.0. Tornar al menú principal:
 Serveix per torna el menú per si ens hem equivocat o per si després volem sortir del programa.
 
-![imatg22](Imatges/Imagen23.png)
-
 3. Exportació de dades:
 Aquí el que fem és posar dues dades una data d'inici i una data de fi i ens agafa tota la informació de les visites durant el rang de dies que hem posat i posem la ubicació on volem guarda el fitxer. Exemple:
 
