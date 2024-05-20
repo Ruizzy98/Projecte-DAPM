@@ -1,5 +1,3 @@
-<p align="center"><img alt="Projecte Modular M02-UF3"></p>
-
 ---
 
 <p align="center"><b>¡¡IES SAPALOMERA BLANES!!</b></p>
