@@ -2,6 +2,7 @@
 
 Classificació de dades
 ----------------------
+Nosaltres hem fet una classificacio de dades 
 <h2> Nivel Baix </h2>
 
 <br>
