@@ -1,7 +1,7 @@
 # <p align="center">  MANUAL D’USUARI </p>
  ----------------
 Per començar, tenim el primer fitxer que utilitzarem durant tot el programa que és el main.py que el que fa és tenir en tot moment un menú que el que fa és seleccionar per números el menú i que funcioni un programa o funció amb el que hem seleccionat.
-De primeres hem d'executar el menú i de primer ens surt aquest menú. .
+De primeres hem d'executar el menú i de primer ens surt aquest menú. 
 
 ![imatge](Imatges/Imagen1.png)
 
