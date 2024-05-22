@@ -52,6 +52,9 @@ Taula Medicament
 <br>
 
 <h2> Nivel Alt </h2>
+
+<br>
+
 Taula Personal
 - dni
 - id_personal
