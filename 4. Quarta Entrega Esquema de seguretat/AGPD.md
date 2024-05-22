@@ -5,17 +5,29 @@ Classificació de dades
 Nosaltres hem fet una classificacio de dades 
 <h2> Nivel Baix </h2>
 <br>
+
 Taula Personal
 - nom
 - cognom
 - tipus_de_feina
+
+<br>
+
 Taula Pacient
 - nom
 - cognom
+
+<br>
+
 Taula Planta
 - num_planta
+
+<br>
+
 Taula Habitacio
 - numero_habitacio
+
+
 <br>
 <h2> Nivel Mitj </h2>
 Taula Personal
