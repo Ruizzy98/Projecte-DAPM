@@ -2,7 +2,7 @@
 
 Classificació de dades
 ----------------------
-Nosaltres hem fet una classificacio de dades 
+Nosaltres hem classificat la informació de manera que les dades més sensibles estiguin tan protegits com sigui possible, i els que no són tan sensibles protegir-los, però amb menys seguretat, per a fer-ho primer classifiquem la informació. 
 <h2> Nivel Baix </h2>
 <br>
 
@@ -30,16 +30,27 @@ Taula Habitacio
 
 <br>
 <h2> Nivel Mitj </h2>
+
+<br>
+
 Taula Personal
 - especialitat
 - estudis
 - curriculum
+
+<br>
+
 Taula Aparell
 - id_aparell
 - tipus_de_aparell
+
+<br>
+  
 Taula Medicament
 - nom
 - id_medicament
+
+<br>
 
 <h2> Nivel Alt </h2>
 Taula Personal
@@ -48,60 +59,29 @@ Taula Personal
 - id_vari
 - id_infermeria
 - id_medic
+
+<br>
+
 Taula Pacient
 - id_pacient
 
+<br>
+
+Taula Visita
+- diagnostic
+- data_hora
+- id_visita
+
+<br>
+
+Taula Reserva
+- id_reserva
+- dia_sortida
+- dia_ingres
+
+
 Mesures de dades
 -----------------
+Després creem unes mesures necessàries a les dades, per a fer-ho també les classifiquem en tres nivells.
 
 
-Nivell mitjà
-Taula pacientes:
-
-fecha_nacimiento
-direccion
-num_telefono
-Taula personal:
-
-correo
-num_telefono
-direccion
-Taula diagnósticos:
-
-fecha_entrada
-fecha_salida
-Taula operaciones:
-
-en_id
-fecha_entrada
-fecha_salida
-ha_sido_operado
-q_id
-Taula reservas:
-
-h_id
-diaentrada
-diaprevistosalida
-Nivell alt
-Taula pacientes:
-
-id_tarjeta_sanitaria
-contacto_emergencia
-condiciones_paciente
-Taula personal:
-
-p_id
-DNI
-Taula diagnósticos:
-
-p_id
-id_tarjeta_sanitaria
-tiene_receta
-medicamentos
-Taula operaciones:
-
-Id_tarjeta_sanitaria
-p_id
-Taula reservas:
-
-id_tarjeta_sanitaria
