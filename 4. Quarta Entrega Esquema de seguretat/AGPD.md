@@ -2,7 +2,11 @@
 
 Classificació de dades
 ----------------------
-<h2> Nivel Baix
+<h2> Nivel Baix </h2>
+
+<br>
+
+
 - 
 - 
 - 
