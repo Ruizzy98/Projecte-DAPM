@@ -4,8 +4,6 @@ Classificació de dades
 ----------------------
 Nosaltres hem classificat la informació de manera que les dades més sensibles estiguin tan protegits com sigui possible, i els que no són tan sensibles protegir-los, però amb menys seguretat, per a fer-ho primer classifiquem la informació. 
 <h2> Nivel Baix </h2>
-<br>
-
 Taula Personal
 - nom
 - cognom
