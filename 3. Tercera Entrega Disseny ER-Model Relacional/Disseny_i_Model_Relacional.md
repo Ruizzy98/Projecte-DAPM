@@ -12,6 +12,8 @@ Justificació
 
 - Passa el mateix amb **PACIENT** i **VISITA**, ja que considerem que un pacient pot tenir moltes visites, i una vista és d'un  únic pacient.
 
+- Per últim, en les operacions estan asociats **PERSONAL MEDIC** i els medics tenen asociats el **PERSONAL INFERMERIA**.
+
 ![Imatge3](Imagenes/2.png)
 
 <br>
