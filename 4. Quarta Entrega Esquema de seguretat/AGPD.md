@@ -78,8 +78,8 @@ Taula Reserva
 - dia_ingres
 
 
-<p align="center">  Mesures de dades </p>
-------------------------------------------
+<p align="center"> <h2> Mesures de dades </h2> </p>
+
 
 
 Després creem unes mesures necessàries a les dades, per a fer-ho també les classifiquem en tres nivells.
