@@ -3,7 +3,7 @@
 Classificació de dades
 ----------------------
 Nosaltres hem classificat la informació de manera que les dades més sensibles estiguin tan protegits com sigui possible, i els que no són tan sensibles protegir-los, però amb menys seguretat, per a fer-ho primer classifiquem la informació. 
-<h2> Nivel Baix </h2>
+<h2> Nivell Baix </h2>
 
 Taula Personal
 - nom
@@ -28,7 +28,7 @@ Taula Habitacio
 
 
 <br>
-<h2> Nivel Mitj </h2>
+<h2> Nivell Mitj </h2>
 
 Taula Personal
 - especialitat
@@ -49,7 +49,7 @@ Taula Medicament
 
 <br>
 
-<h2> Nivel Alt </h2>
+<h2> Nivell Alt </h2>
 
 Taula Personal
 - dni
