@@ -87,5 +87,25 @@ Mesures de dades
 Després creem unes mesures necessàries a les dades, per a fer-ho també les classifiquem en tres nivells.
 
 <h2> Mesures nivell baix </h2>
+Copies de seguretat:
+- Fem còpies de seguretat regularment, tant en local com en el núvol.
+
+<br>
+
+Control d'accés:
+- Hem assignat rols a tots els usuaris i grups.
+- Us de contrasenyes segures.
+
+<br>
+
+<h2> Mesures nivell mitj </h2>
+Data Masking:
+- Creació i asignació de tecniques de Data Masking, per tal de protegir les dades mes sensibles.
+
+<br>
+
+
+
+<h2> Mesures nivell alt </h2>
 
 
