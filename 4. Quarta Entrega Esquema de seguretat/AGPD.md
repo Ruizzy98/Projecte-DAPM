@@ -79,7 +79,9 @@ Taula Reserva
 
 
 <p align="center">  Mesures de dades </p>
------------------
+
+
+
 Després creem unes mesures necessàries a les dades, per a fer-ho també les classifiquem en tres nivells.
 
 <h2> Mesures nivell baix </h2>
