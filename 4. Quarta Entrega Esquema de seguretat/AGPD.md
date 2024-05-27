@@ -28,7 +28,7 @@ Taula Habitacio
 
 
 <br>
-<h2> Nivell Mitj </h2>
+<h2> Nivell Mitjà </h2>
 
 Taula Personal
 - especialitat
