@@ -97,7 +97,7 @@ Control d'accés:
 
 <br>
 
-<h2> Mesures nivell mitj </h2>
+<h2> Mesures nivell mitjà </h2>
 
 Data Masking: <br>
 - Creació i assignació de tècniques de Data Masking, per tal de protegir les dades més sensibles.
