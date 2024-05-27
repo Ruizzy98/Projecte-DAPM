@@ -82,7 +82,7 @@ Mesures de dades
 -----------------
 Després creem unes mesures necessàries a les dades, per a fer-ho també les classifiquem en tres nivells.
 
-<h2> Mesures nivell baix </h2>
+<p align="center"> <h2> Mesures nivell baix </h2> </p>
 Copies de seguretat:
 - Fem còpies de seguretat regularment, tant en local com en el núvol.
 
