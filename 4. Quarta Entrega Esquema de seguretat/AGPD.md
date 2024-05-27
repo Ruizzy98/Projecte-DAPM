@@ -105,25 +105,16 @@ Xifratge:
 
 <h2> Mesures nivell alt </h2>
 
-<h3>Seguretat física:</h3>
-<ul>
-    <li><b>Control d'accés estricte:</b> Implementació de controls biomètrics (empremta digital, reconeixement facial) per accedir a les àrees on es guarden les dades dels pacients.</li>
-    <li><b>Vigilància 24/7:</b> Sistemes de vigilància amb càmeres de seguretat a les àrees de servidors i altres zones crítiques, amb enregistrament continu i monitorització activa.</li>
-    <li><b>Dispositius de seguretat física:</b> Utilització de portes blindades, panys electrònics i sistemes d'alarma en les instal·lacions de TI.</li>
-</ul>
+Seguretat física:
 
-<h3>Avaluacions d'impacte:</h3>
-<ul>
-    <li><b>Avaluacions d'impacte de protecció de dades (EIPD) periòdiques:</b> Realització d'EIPD periòdiques per identificar i mitigar riscos associats al tractament de dades personals.</li>
-    <li><b>Integració d'eines d'avaluació automàtiques:</b> Ús d'eines automatitzades per avaluar l'impacte en la privacitat de nous projectes o canvis en els processos.</li>
-    <li><b>Formació contínua:</b> Sessions de formació regulars per al personal sobre la importància i la realització d'avaluacions d'impacte.</li>
-</ul>
+- Control d'accés estricte amb Implementació de controls biomètrics per accedir a les àrees on es guarden les dades dels pacients.
 
-<h3>Xifratge avançat:</h3>
-<ul>
-    <li><b>Xifratge de disc complet (FDE):</b> Implementació de xifratge de disc complet per a tots els dispositius que emmagatzemen dades sensibles.</li>
-    <li><b>Xifratge d'extrem a extrem:</b> Utilització de xifratge d'extrem a extrem per a totes les comunicacions entre dispositius mèdics, servidors i aplicacions.</li>
-    <li><b>Protocols de xifratge avançats:</b> Aplicació de protocols de xifratge avançats com AES-256 per protegir dades en trànsit i en repòs.</li>
-</ul>
+- Dispositius de seguretat física amb utilització de portes blindades
+
+Xifratge avançat:
+
+- Xifratge de disc complet: Implementació de xifratge de disc complet per a tots els dispositius que emmagatzemen dades sensibles.
+
+
 
 
