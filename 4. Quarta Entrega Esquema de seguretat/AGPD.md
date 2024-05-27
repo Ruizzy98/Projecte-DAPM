@@ -84,6 +84,7 @@ Després creem unes mesures necessàries a les dades, per a fer-ho també les cl
 
 <h2> Mesures nivell baix </h2>
 Copies de seguretat: <br>
+
 - Fem còpies de seguretat regularment, tant en local com en el núvol.
 
 <br>
