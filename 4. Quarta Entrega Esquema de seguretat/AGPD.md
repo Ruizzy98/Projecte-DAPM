@@ -30,8 +30,6 @@ Taula Habitacio
 <br>
 <h2> Nivel Mitj </h2>
 
-<br>
-
 Taula Personal
 - especialitat
 - estudis
@@ -52,8 +50,6 @@ Taula Medicament
 <br>
 
 <h2> Nivel Alt </h2>
-
-<br>
 
 Taula Personal
 - dni
