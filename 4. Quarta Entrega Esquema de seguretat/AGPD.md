@@ -3,7 +3,7 @@
 Classificació de dades
 ----------------------
 Nosaltres hem classificat la informació de manera que les dades més sensibles estiguin tan protegits com sigui possible, i els que no són tan sensibles protegir-los, però amb menys seguretat, per a fer-ho primer classifiquem la informació. 
-<h2> Nivel Baix </h2>
+<h2> Nivell Baix </h2>
 
 Taula Personal
 - nom
@@ -28,7 +28,7 @@ Taula Habitacio
 
 
 <br>
-<h2> Nivel Mitj </h2>
+<h2> Nivell Mitjà </h2>
 
 Taula Personal
 - especialitat
@@ -49,7 +49,7 @@ Taula Medicament
 
 <br>
 
-<h2> Nivel Alt </h2>
+<h2> Nivell Alt </h2>
 
 Taula Personal
 - dni
@@ -83,7 +83,10 @@ Taula Reserva
 Després creem unes mesures necessàries a les dades, per a fer-ho també les classifiquem en tres nivells.
 
 <h2> Mesures nivell baix </h2>
-Copies de seguretat:
+Copies de seguretat: <br>
+
+<br>
+
 - Fem còpies de seguretat regularment, tant en local com en el núvol.
 
 <br>
@@ -94,8 +97,9 @@ Control d'accés:
 
 <br>
 
-<h2> Mesures nivell mitj </h2>
-Data Masking:
+<h2> Mesures nivell mitjà </h2>
+
+Data Masking: <br>
 - Creació i assignació de tècniques de Data Masking, per tal de protegir les dades més sensibles.
 
 <br>
