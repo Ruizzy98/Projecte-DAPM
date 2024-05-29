@@ -24,3 +24,21 @@
 #### [8.  Vuitena Entrega Dummy Data](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/8.%20Vuitena%20Entrega%20Dummy%20Data)
 #### [9.  Novena entrega Exportació de Dades](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/9.%20Novena%20entrega%20Exportaci%C3%B3%20de%20Dades)
 #### [10. Desena entrega Document final i maual de usuari](https://github.com/Ruizzy98/Projecte-DAPM/tree/main/10%20Desena%20entrega%20Document%20final%20i%20manual%20d'usuari)
+
+
+
+# WEBGRAFIA
+Aquí trobem totes les webs foros
+https://www.pgadmin.org/
+https://www.virtualbox.org/
+https://code.visualstudio.com/
+https://faker.readthedocs.io/en/master/
+https://zetcode.com/python/faker/
+https://microsoft.com/es-es/microsoft-365/project/project-management-software
+https://www.codigopiton.com/como-hacer-un-menu-de-usuario-en-python/
+https://github.com/RealStrategy/MENU-PYTHON/blob/main/menu.py
+https://docs.python.org/3/library/csv.html
+https://realpython.com/python-csv/
+https://cryptography.io/en/latest/fernet/
+https://pythonistaplanet.com/fernet/
+
