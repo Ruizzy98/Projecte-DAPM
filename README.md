@@ -28,17 +28,29 @@
 
 
 # WEBGRAFIA
-Aquí trobem totes les webs foros
+Aquí trobem totes les webs foros <br>
+<br>
 https://www.pgadmin.org/
+<br>
 https://www.virtualbox.org/
+<br>
 https://code.visualstudio.com/
+<br>
 https://faker.readthedocs.io/en/master/
+<br>
 https://zetcode.com/python/faker/
+<br>
 https://microsoft.com/es-es/microsoft-365/project/project-management-software
+<br>
 https://www.codigopiton.com/como-hacer-un-menu-de-usuario-en-python/
+<br>
 https://github.com/RealStrategy/MENU-PYTHON/blob/main/menu.py
+<br>
 https://docs.python.org/3/library/csv.html
+<br>
 https://realpython.com/python-csv/
+<br>
 https://cryptography.io/en/latest/fernet/
+<br>
 https://pythonistaplanet.com/fernet/
 
