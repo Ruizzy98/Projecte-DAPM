@@ -28,7 +28,7 @@
 
 
 # WEBGRAFIA
-Aquí trobem totes les webs foros <br>
+Aquí trobem totes les webs, fòrums i informació que hem utilizat per fer aquest treball. <br>
 <br>
 https://www.pgadmin.org/
 <br>
